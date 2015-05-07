@@ -53,3 +53,7 @@ expect(taskList.length).to.equal(2);
 
 listTasks();
 expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
+expect(taskList[0]).to.equal("Remember the milk");
+taskList[0] = "Remember the milk and eggs";
+expect(taskList[0]).to.equal("Remember the milk and eggs");
+console.log(taskList[0])
