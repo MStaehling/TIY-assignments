@@ -6,11 +6,11 @@ var taskList = []
 
 
 // I can list my tasks
-
+var i = 0
 function listTasks (i){
   for (var i = 0; i < taskList.length; i++){
     return taskList[i];
-}
+  }
 }
 
 // I can add a task to my list
@@ -53,4 +53,3 @@ expect(taskList.length).to.equal(2);
 
 listTasks();
 expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
-console.log(listTasks(i))
