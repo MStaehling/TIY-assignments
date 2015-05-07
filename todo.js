@@ -27,8 +27,9 @@ function removeTaskToList(task, list){
 
 }
 
-function editTaskToDoList(task, list){
-
+function editTask(position, newTaskName){
+  taskList[position] = newTaskName;
+  return newTaskName;
 
 }
 
@@ -54,6 +55,6 @@ expect(taskList.length).to.equal(2);
 listTasks();
 expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
 expect(taskList[0]).to.equal("Remember the milk");
-taskList[0] = "Remember the milk and eggs";
+editTask(0, "Remember the milk and eggs");
 expect(taskList[0]).to.equal("Remember the milk and eggs");
-console.log(taskList[0])
+console.log(taskList)
