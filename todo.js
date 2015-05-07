@@ -8,8 +8,8 @@ var taskList = []
 // I can list my tasks
 
 function listTasks (){
-for (var i = 0; i < taskList.length; i++){
-  return taskList[i];
+  for (var i = 0; i < taskList.length; i++){
+    return taskList[i];
 }
 }
 
@@ -44,7 +44,6 @@ function completeTaskToDoList(task, list){
 
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
-console.log("This is a taskList[0]", taskList[0])
 expect(taskList[0]).to.equal("Remember the milk");
 expect(taskList.length).to.equal(1);
 expect(taskList.length).to.equal(1);
@@ -54,3 +53,4 @@ expect(taskList.length).to.equal(2);
 
 listTasks();
 expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
+console.log(listTasks)
