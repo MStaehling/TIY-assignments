@@ -22,6 +22,26 @@ function addTaskToList(task, list){
   return list.push(task)
 }
 
+function removeTaskToList(task, list){
+
+
+}
+
+function editTaskToDoList(task, list){
+
+
+}
+
+function prioritizeTaskToDoList(task, list){
+
+
+}
+
+function completeTaskToDoList(task, list){
+
+
+}
+
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
 console.log("This is a taskList[0]", taskList[0])
