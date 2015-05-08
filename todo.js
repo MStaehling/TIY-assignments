@@ -6,12 +6,12 @@ var taskList = []
 
 
 // I can list my tasks
-var i = 0
+/* var i = 0
 function listTasks (i){
   for (var i = 0; i < taskList.length; i++){
     return taskList[i];
   }
-}
+}*/
 
 // I can add a task to my list
 
@@ -22,8 +22,8 @@ function addTaskToList(task, list){
   return list.push(task)
 }
 
-function removeTaskToList(task, list){
-
+function deleteTask(task, list){
+  return list.splice(task, 1);
 
 }
 
@@ -52,9 +52,15 @@ addTaskToList("Take out the trash", taskList);
 expect(taskList[1]).to.equal("Take out the trash");
 expect(taskList.length).to.equal(2);
 
-listTasks();
-expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
+// listTasks();
+// expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
 expect(taskList[0]).to.equal("Remember the milk");
 editTask(0, "Remember the milk and eggs");
+expect(taskList[0]).to.equal("Remember the milk and eggs");
+console.log(taskList);
+
+expect(taskList.length).to.equal(2);
+deleteTask(1, taskList);
+expect(taskList.length).to.equal(1);
 expect(taskList[0]).to.equal("Remember the milk and eggs");
 console.log(taskList)
