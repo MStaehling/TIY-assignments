@@ -39,5 +39,17 @@ function add(a, b){
 
 }
 
+function minus(a, b){
+  return (toNumber(a) - toNumber(b))
+}
+
+function multiply(a, b){
+  return (toNumber(a) * toNumber(b))
+}
+
+function divide(a, b){
+  return (toNumber(a) / toNumber(b))
+}
+
 expect(toNumber("zero")).to.equal(0);
 expect(toNumber("one")).to.equal(1);
