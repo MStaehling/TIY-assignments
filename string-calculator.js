@@ -357,19 +357,15 @@ function add(a, b){
   }
   if ( a === "seven" && b === "five"){
     var a = 7;
-    var b = 4;
+    var b = 5;
   }
   if ( a === "seven" && b === "six"){
     var a = 7;
-    var b = 5;
+    var b = 6;
   }
   if ( a === "seven" && b === "seven"){
     var a = 7;
     var b = 7;
-  }
-  if ( a === "seven" && b === "seven"){
-    var a = 7;
-    var b = 8;
   }
   if ( a === "seven" && b === "eight"){
     var a = 7;
@@ -549,6 +545,15 @@ expect(add("seven", "four")).to.equal(11);
 expect(add("seven", "five")).to.equal(12);
 expect(add("seven", "six")).to.equal(13);
 expect(add("seven", "seven")).to.equal(14);
+expect(add("seven", "eight")).to.equal(15);
+expect(add("seven", "nine")).to.equal(16);
+
+expect(add("eight", "zero")).to.equal(8);
+expect(add("eight", "one")).to.equal(9);
+expect(add("eight", "two")).to.equal(10);
+expect(add("eight", "three")).to.equal(11);
+expect(add("eight", "four")).to.equal(12);
+expect(add("eight", "five")).to.equal(13);
 
 
 
