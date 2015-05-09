@@ -33,13 +33,13 @@ function editTask(position, newTaskName){
 
 }
 
-function prioritizeTaskToDoList(task, list){
+function prioritizeTask(task, list){
 
 
 }
 
-function completeTaskToDoList(task, list){
-
+function completeTask(task, position){
+  return task[position] = ("[X] " + task[position]);
 
 }
 
@@ -52,6 +52,10 @@ addTaskToList("Take out the trash", taskList);
 expect(taskList[1]).to.equal("Take out the trash");
 expect(taskList.length).to.equal(2);
 
+expect(completeTask).to.exist;
+completeTask(taskList, 1);
+expect(taskList[1]).to.equal("[X] Take out the trash");
+console.log(taskList);
 // listTasks();
 // expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
 expect(taskList[0]).to.equal("Remember the milk");
