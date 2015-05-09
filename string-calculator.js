@@ -34,6 +34,26 @@ function toNumber(word){
 
 }
 
+/* function add(a, b){
+  return (toNumber(a) + toNumber(b))
+
+}
+
+function minus(a, b){
+  return (toNumber(a) - toNumber(b))
+}
+
+function multiply(a, b){
+  return (toNumber(a) * toNumber(b))
+}
+
+function divide(a, b){
+  return (toNumber(a) / toNumber(b))
+}
+
+expect(toNumber("zero")).to.equal(0);
+expect(toNumber("one")).to.equal(1); */
+
 function add(a, b){
   if ( a === "zero" && b === "zero"){
     var a = 0;
@@ -455,8 +475,27 @@ expect(add("zero", "seven")).to.equal(7);
 expect(add("zero", "eight")).to.equal(8);
 expect(add("zero", "nine")).to.equal(9);
 
+expect(add("one", "zero")).to.equal(1);
+expect(add("one", "one")).to.equal(2);
+expect(add("one", "two")).to.equal(3);
+expect(add("one", "three")).to.equal(4);
 expect(add("one", "four")).to.equal(5);
 expect(add("one", "five")).to.equal(6);
+expect(add("one", "six")).to.equal(7);
+expect(add("one", "seven")).to.equal(8);
+expect(add("one", "eight")).to.equal(9);
+expect(add("one", "nine")).to.equal(10);
+
+expect(add("two", "zero")).to.equal(2);
+expect(add("two", "one")).to.equal(3);
+expect(add("two", "two")).to.equal(4);
+expect(add("two", "three")).to.equal(5);
+expect(add("two", "four")).to.equal(6);
+expect(add("two", "five")).to.equal(7);
+expect(add("two", "six")).to.equal(8);
+expect(add("two", "seven")).to.equal(9);
+expect(add("two", "eight")).to.equal(10);
+expect(add("two", "nine")).to.equal(11);
 
 
 
@@ -495,23 +534,3 @@ function div(a, b){
 
 expect(div).to.exist;
 console.log(div("zero","six"));
-
-/* function addd(a, b){
-  return (toNumber(a) + toNumber(b))
-
-}
-
-function minus(a, b){
-  return (toNumber(a) - toNumber(b))
-}
-
-function multiply(a, b){
-  return (toNumber(a) * toNumber(b))
-}
-
-function divide(a, b){
-  return (toNumber(a) / toNumber(b))
-}
-
-expect(toNumber("zero")).to.equal(0);
-expect(toNumber("one")).to.equal(1); */
