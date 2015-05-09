@@ -187,7 +187,7 @@ function add(a, b){
     var a = 3;
     var b = 7;
   }
-  if ( a === "three" $$ "eight"){
+  if ( a === "three" && "eight"){
     var a = 3;
     var b = 8;
   }
@@ -248,8 +248,8 @@ function add(a, b){
     var b = 2;
   }
   if ( a === "five" && b === "three"){
-    var = 5;
-    var = 3;
+    var a = 5;
+    var b = 3;
   }
   if ( a === "five" && b === "four"){
     var a = 5;
@@ -377,7 +377,7 @@ function add(a, b){
   }
   if ( a === "eight" && b === "four"){
     var a = 8;
-    var b = 4:
+    var b = 4;
   }
   if ( a === "eight" && b === "five"){
     var a = 8;
