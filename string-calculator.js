@@ -46,7 +46,9 @@ function add(a, b){
     return a + b;
   }
   if ( a === "zero" && b === "two"){
-    return 2;
+    var a = 0;
+    var b = 2;
+    return a + b;
   }
   if ( a === "zero" && b === "three"){
     return 3;
@@ -69,6 +71,35 @@ function add(a, b){
   if ( a === "zero" && b === "nine"){
     return 9;
   }
+  if ( a === "one" && b === "zero"){
+    var a = 1;
+    var b = 0;
+    return a + b;
+  }
+  if ( a === "one" && b === "one"){
+    var a = 1;
+    var b = 1;
+    return a + b;
+  }
+  if ( a === "one" && b === "two"){
+    var a = 1;
+    var b = 2;
+    return a + b;
+  }
+  if ( a === "one" && b === "three"){
+    var a = 1;
+    var b = 3;
+    return a + b;
+  }
+  if ( a === "one" && b === "four"){
+    var a = 1;
+    var b = 4;
+  }
+  if ( a === "one" && b === "five"){
+    var a = 1;
+    var b = 5;
+  }
+  return a + b
 }
 
 // expect(toNumber).to.exist;
@@ -83,6 +114,10 @@ expect(add("zero", "six")).to.equal(6);
 expect(add("zero", "seven")).to.equal(7);
 expect(add("zero", "eight")).to.equal(8);
 expect(add("zero", "nine")).to.equal(9);
+
+expect(add("one", "four")).to.equal(5);
+expect(add("one", "five")).to.equal(6);
+
 
 
 console.log(add("zero", "one"))
