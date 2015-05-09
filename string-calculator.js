@@ -497,6 +497,29 @@ expect(add("two", "seven")).to.equal(9);
 expect(add("two", "eight")).to.equal(10);
 expect(add("two", "nine")).to.equal(11);
 
+expect(add("three", "zero")).to.equal(3);
+expect(add("three", "one")).to.equal(4);
+expect(add("three", "two")).to.equal(5);
+expect(add("three", "three")).to.equal(6);
+expect(add("three", "four")).to.equal(7);
+expect(add("three", "five")).to.equal(8);
+expect(add("three", "six")).to.equal(9);
+expect(add("three", "seven")).to.equal(10);
+expect(add("three", "eight")).to.equal(11);
+expect(add("three", "nine")).to,equal(12);
+
+expect(add("four", "zero")).to.equal(4);
+expect(add("four", "one")).to.equal(5);
+expect(add("four", "two")).to.equal(6);
+expect(add("four", "three")).to.equal(7);
+expect(add("four", "four")).to.equal(8);
+expect(add("four", "five")).to.equal(9);
+expect(add("four", "six")).to.equal(10);
+expect(add("four", "seven")).to.equal(11);
+expect(add("four", "eight")).to.equal(12);
+expect(add("four", "nine")).to.equal(13);
+
+expect(add("five", "zero")).to.equal(5);
 
 
 console.log(add("zero", "one"))
