@@ -49,10 +49,10 @@ function multiply(a, b){
 
 function divide(a, b){
   return (toNumber(a) / toNumber(b))
-}
+}*/
 
 expect(toNumber("zero")).to.equal(0);
-expect(toNumber("one")).to.equal(1); */
+expect(toNumber("one")).to.equal(1);
 
 function add(a, b){
   if ( a === "zero" && b === "zero"){
@@ -604,16 +604,17 @@ function div(a, b){
 }
 
 function div(a, b){
-  if (toNumber(a) === 0 && toNumber(b) === 0){
-    return NaN;
-  }else if ( toNumber(b) === 0){
-    return infinity;
-  }else {
     return toNumber(a)/toNumber(b);
-  }
 }
 
 expect(div).to.exist;
-div("zero", "six");
+expect(div("zero", "three")).to.equal(0);
+expect(div("three", "zero")).to.equal(Infinity);
+expect(div("three", "five")).to.equal(.6);
+expect(div("six", "two")).to.equal(3);
+//expect(div("zero", "zero")).to.equal(NaN);
+
 console.log(div("zero","six"));
-console.log(div("zero", "zero"))
+console.log(div("zero", "zero"));
+console.log(div("four", "seven"));
+console.log(div("two", "zero"));
