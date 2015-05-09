@@ -183,43 +183,43 @@ function add(a, b){
     var a = 3;
     var b = 1;
   }
-  if ( a === "three" && "two"){
+  if ( a === "three" && b === "two"){
     var a = 3;
     var b = 2;
   }
-  if ( a === "three" && "three"){
+  if ( a === "three" && b === "three"){
     var a = 3;
     var b = 3;
   }
-  if ( a === "three" && "four"){
+  if ( a === "three" && b === "four"){
     var a = 3;
     var b = 4;
   }
-  if ( a === "three" && "five"){
+  if ( a === "three" && b === "five"){
     var a = 3;
     var b = 5;
   }
-  if ( a === "three" && "six"){
+  if ( a === "three" && b === "six"){
     var a = 3;
     var b = 6;
   }
-  if ( a === "three" && "seven"){
+  if ( a === "three" && b === "seven"){
     var a = 3;
     var b = 7;
   }
-  if ( a === "three" && "eight"){
+  if ( a === "three" && b === "eight"){
     var a = 3;
     var b = 8;
   }
-  if ( a === "three" && "nine"){
+  if ( a === "three" && b === "nine"){
     var a = 3;
     var b = 9;
   }
-  if ( a === "four" && "zero"){
+  if ( a === "four" && b === "zero"){
     var a = 4;
     var b = 0;
   }
-  if ( a === "four" && "one"){
+  if ( a === "four" && b === "one"){
     var a = 4;
     var b = 1;
   }
@@ -506,7 +506,7 @@ expect(add("three", "five")).to.equal(8);
 expect(add("three", "six")).to.equal(9);
 expect(add("three", "seven")).to.equal(10);
 expect(add("three", "eight")).to.equal(11);
-expect(add("three", "nine")).to,equal(12);
+expect(add("three", "nine")).to.equal(12);
 
 expect(add("four", "zero")).to.equal(4);
 expect(add("four", "one")).to.equal(5);
@@ -520,6 +520,7 @@ expect(add("four", "eight")).to.equal(12);
 expect(add("four", "nine")).to.equal(13);
 
 expect(add("five", "zero")).to.equal(5);
+
 
 
 console.log(add("zero", "one"))
@@ -553,7 +554,16 @@ function div(a, b){
 
 }
 
-
+function div(a, b){
+  if (toNumber(a) === 0 && toNumber(b) === 0){
+    return NaN;
+  }else if ( toNumber(b) === 0){
+    return infinity;
+  }else {
+    return toNumber(a)/toNumber(b);
+  }
+}
 
 expect(div).to.exist;
+div("zero", "six");
 console.log(div("zero","six"));
