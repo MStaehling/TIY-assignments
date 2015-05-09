@@ -893,7 +893,86 @@ function sub(a, b){
     var a = 7;
     var b = 9;
   }
-
+  if ( a === "eight" && b === "zero"){
+    var a = 8;
+    var b = 0;
+  }
+  if ( a === "eight" && b === "one"){
+    var a = 8;
+    var b = 1;
+  }
+  if (a === "eight" && b === "two"){
+    var a = 8;
+    var b = 2;
+  }
+  if ( a === "eight" && b === "three"){
+    var a = 8;
+    var b = 3;
+  }
+  if ( a === "eight" && b === "four"){
+    var a = 8;
+    var b = 4;
+  }
+  if ( a === "eight" && b === "five"){
+    var a = 8;
+    var b = 5;
+  }
+  if ( a === "eight" && b === "six"){
+    var a = 8;
+    var b = 6;
+  }
+  if ( a === "eight" && b === "seven"){
+    var a = 8;
+    var b = 7;
+  }
+  if ( a === "eight" && b === "eight"){
+    var a = 8;
+    var b = 8;
+  }
+  if ( a === "eight" && b === "nine"){
+    var a = 8;
+    var b = 9;
+  }
+  if (a === "nine" && b === "zero"){
+    var a = 9;
+    var b = 0;
+  }
+  if ( a === "nine" && b === "one"){
+    var a = 9;
+    var b = 1;
+  }
+  if ( a === "nine" && b === "two"){
+    var a = 9;
+    var b = 2;
+  }
+  if ( a === "nine" && b === "three"){
+    var a = 9;
+    var b = 3;
+  }
+  if ( a === "nine" && b === "four"){
+    var a = 9;
+    var b = 4;
+  }
+  if ( a === "nine" && b === "five"){
+    var a = 9;
+    var b = 5;
+  }
+  if ( a === "nine" && b === "six"){
+    var a = 9;
+    var b = 6;
+  }
+  if ( a === "nine" && b === "seven"){
+    var a = 9;
+    var b = 7;
+  }
+  if ( a === "nine" && b === "eight"){
+    var a = 9;
+    var b = 8;
+  }
+  if ( a === "nine" && b === "nine"){
+    var a = 9;
+    var b = 9;
+  }
   return a - b;
 }
 
