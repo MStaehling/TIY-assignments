@@ -976,6 +976,42 @@ function sub(a, b){
   return a - b;
 }
 
+expect(sub).to.exist;
+expect(sub("zero", "zero")).to.equal(0);
+expect(sub("zero", "one")).to.equal(-1);
+expect(sub("zero", "two")).to.equal(-2);
+expect(sub("zero", "three")).to.equal(-3);
+expect(sub("zero", "four")).to.equal(-4);
+expect(sub("zero", "five")).to.equal(-5);
+expect(sub("zero", "six")).to.equal(-6);
+expect(sub("zero", "seven")).to.equal(-7);
+expect(sub("zero", "eight")).to.equal(-8);
+expect(sub("zero", "nine")).to.equal(-9);
+
+expect(sub("one", "zero")).to.equal(1);
+expect(sub("one", "one")).to.equal(0);
+expect(sub("one", "two")).to.equal(-1);
+expect(sub("one", "three")).to.equal(-2);
+expect(sub("one", "four")).to.equal(-3);
+expect(sub("one", "five")).to.equal(-4);
+expect(sub("one", "six")).to.equal(-5);
+expect(sub("one", "seven")).to.equal(-6);
+expect(sub("one", "eight")).to.equal(-7);
+expect(sub("one", "nine")).to.equal(-8);
+
+expect(sub("two", "zero")).to.equal(2);
+expect(sub("two", "one")).to.equal(1);
+expect(sub("two", "two")).to.equal(0);
+expect(sub("two", "three")).to.equal(-1);
+expect(sub("two", "four")).to.equal(-2);
+expect(sub("two", "five")).to.equal(-3);
+expect(sub("two", "six")).to.equal(-4);
+expect(sub("two", "seven")).to.equal(-5);
+expect(sub("two", "eight")).to.equal(-6);
+expect(sub("two", "nine")).to.equal(-7);
+
+
+
 function div(a, b){
   if ( a === "zero" && b === "zero"){
     var a = 0;
