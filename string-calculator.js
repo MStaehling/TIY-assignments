@@ -1054,7 +1054,38 @@ expect(sub("six", "seven")).to.equal(-1);
 expect(sub("six", "eight")).to.equal(-2);
 expect(sub("six", "nine")).to.equal(-3);
 
+expect(sub("seven", "zero")).to.equal(7);
+expect(sub("seven", "one")).to.equal(6);
+expect(sub("seven", "two")).to.equal(5);
+expect(sub("seven", "three")).to.equal(4);
+expect(sub("seven", "four")).to.equal(3);
+expect(sub("seven", "five")).to.equal(2);
+expect(sub("seven", "six")).to.equal(1);
+expect(sub("seven", "seven")).to.equal(0);
+expect(sub("seven", "eight")).to.equal(-1);
+expect(sub("seven", "nine")).to.equal(-2);
 
+expect(sub("eight", "zero")).to.equal(8);
+expect(sub("eight", "one")).to.equal(7);
+expect(sub("eight", "two")).to.equal(6);
+expect(sub("eight", "three")).to.equal(5);
+expect(sub("eight", "four")).to.equal(4);
+expect(sub("eight", "five")).to.equal(3);
+expect(sub("eight", "six")).to.equal(2);
+expect(sub("eight", "seven")).to.equal(1);
+expect(sub("eight", "eight")).to.equal(0);
+expect(sub("eight", "nine")).to.equal(-1);
+
+expect(sub("nine", "zero")).to.equal(9);
+expect(sub("nine", "one")).to.equal(8);
+expect(sub("nine", "two")).to.equal(7);
+expect(sub("nine", "three")).to.equal(6);
+expect(sub("nine", "four")).to.equal(5);
+expect(sub("nine", "five")).to.equal(4);
+expect(sub("nine", "six")).to.equal(3);
+expect(sub("nine", "seven")).to.equal(2);
+expect(sub("nine", "eight")).to.equal(1);
+expect(sub("nine", "nine")).to.equal(0);
 
 function div(a, b){
   if ( a === "zero" && b === "zero"){
