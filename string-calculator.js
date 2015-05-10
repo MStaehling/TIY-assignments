@@ -2011,15 +2011,90 @@ function div(a, b){
 
 
 
-function div(a, b){
+/*function div(a, b){
     return toNumber(a)/toNumber(b);
-}
+}*/
 
 expect(div).to.exist;
+expect(div("zero", "one")).to.equal(0);
+expect(div("zero", "two")).to.equal(0);
 expect(div("zero", "three")).to.equal(0);
+expect(div("zero", "four")).to.equal(0);
+expect(div("zero", "five")).to.equal(0);
+expect(div("zero", "six")).to.equal(0);
+expect(div("zero", "seven")).to.equal(0);
+expect(div("zero", "eight")).to.equal(0);
+expect(div("zero", "nine")).to.equal(0);
+
+expect(div("one", "zero")).to.equal(Infinity);
+expect(div("one", "one")).to.equal(1);
+expect(div("one", "two")).to.equal(.5);
+expect(div("one", "four")).to.equal(.25);
+expect(div("one", "five")).to.equal(.2);
+expect(div("one", "eight")).to.equal(.125);
+
+expect(div("two", "zero")).to.equal(Infinity);
+expect(div("two", "one")).to.equal(2);
+expect(div("two", "two")).to.equal(1);
+expect(div("two", "four")).to.equal(.5);
+expect(div("two", "five")).to.equal(.4);
+expect(div("two", "eight")).to.equal(.25);
+
 expect(div("three", "zero")).to.equal(Infinity);
+expect(div("three", "one")).to.equal(3);
+expect(div("three", "two")).to.equal(1.5);
+expect(div("three", "three")).to.equal(1);
+expect(div("three", "four")).to.equal(.75);
 expect(div("three", "five")).to.equal(.6);
+expect(div("three", "six")).to.equal(.5);
+expect(div("three", "eight")).to.equal(.375);
+
+expect(div("four", "zero")).to.equal(Infinity);
+expect(div("four", "one")).to.equal(4);
+expect(div("four", "two")).to.equal(2);
+expect(div("four", "four")).to.equal(1);
+expect(div("four", "five")).to.equal(.8);
+expect(div("four", "eight")).to.equal(.5);
+
+expect(div("five", "zero")).to.equal(Infinity);
+expect(div("five", "one")).to.equal(5);
+expect(div("five", "two")).to.equal(2.5);
+expect(div("five", "four")).to.equal(1.25);
+expect(div("five", "five")).to.equal(1);
+expect(div("five", "eight")).to.equal(.625);
+
+expect(div("six", "zero")).to.equal(Infinity);
+expect(div("six", "one")).to.equal(6);
 expect(div("six", "two")).to.equal(3);
+expect(div("six", "three")).to.equal(2);
+expect(div("six", "four")).to.equal(1.5);
+expect(div("six", "five")).to.equal(1.2);
+expect(div("six", "six")).to.equal(1);
+expect(div("six", "eight")).to.equal(.75);
+
+expect(div("seven", "zero")).to.equal(Infinity);
+expect(div("seven", "one")).to.equal(7);
+expect(div("seven", "two")).to.equal(3.5);
+expect(div("seven", "four")).to.equal(1.75);
+expect(div("seven", "five")).to.equal(1.4);
+expect(div("seven", "seven")).to.equal(1);
+expect(div("seven", "eight")).to.equal(.875);
+
+expect(div("eight", "zero")).to.equal(Infinity);
+expect(div("eight", "one")).to.equal(8);
+expect(div("eight", "two")).to.equal(4);
+expect(div("eight", "four")).to.equal(2);
+expect(div("eight", "five")).to.equal(1.6);
+expect(div("eight", "eight")).to.equal(1);
+
+expect(div("nine", "zero")).to.equal(Infinity);
+expect(div("nine", "one")).to.equal(9);
+expect(div("nine", "two")).to.equal(4.5);
+expect(div("nine", "three")).to.equal(3);
+expect(div("nine", "four")).to.equal(2.25);
+expect(div("nine", "five")).to.equal(1.8);
+expect(div("nine", "eight")).to.equal(1.125);
+expect(div("nine", "nine")).to.equal(1);
 //expect(div("zero", "zero")).to.equal(NaN);
 
 console.log(div("zero","six"));
