@@ -1087,6 +1087,121 @@ expect(sub("nine", "seven")).to.equal(2);
 expect(sub("nine", "eight")).to.equal(1);
 expect(sub("nine", "nine")).to.equal(0);
 
+function multiply(a, b){
+
+}
+
+expect(multiply).to.exist;
+expect(multiply("zero", "zero")).to.equal(0);
+expect(multiply("zero", "one")).to.equal(0);
+expect(multiply("zero", "two")).to.equal(0);
+expect(multiply("zero", "three")).to.equal(0);
+expect(multiply("zero", "four")).to.equal(0);
+expect(multiply("zero", "five")).to.equal(0);
+expect(multiply("zero", "six")).to.equal(0);
+expect(multiply("zero", "seven")).to.equal(0);
+expect(multiply("zero", "eight")).to.equal(0);
+expect(multiply("zero", "nine")).to.equal(0);
+
+expect(multiply("one", "zero")).to.equal(0);
+expect(multiply("one", "one")).to.equal(1);
+expect(multiply("one", "two")).to.equal(2);
+expect(multiply("one", "three")).to.equal(3);
+expect(multiply("one", "four")).to.equal(4);
+expect(multiply("one", "five")).to.equal(5);
+expect(multiply("one", "six")).to.equal(6);
+expect(multiply("one", "seven")).to.equal(7);
+expect(multiply("one", "eight")).to.equal(8);
+expect(multiply("one", "nine")).to.equal(9);
+
+expect(multiply("two", "zero")).to.equal(0);
+expect(multiply("two", "one")).to.equal(2);
+expect(multiply("two", "two")).to.equal(4);
+expect(multiply("two", "three")).to.equal(6);
+expect(multiply("two", "four")).to.equal(8);
+expect(multiply("two", "five")).to.equal(10);
+expect(multiply("two", "six")).to.equal(12);
+expect(multiply("two", "seven")).to.equal(14);
+expect(multiply("two", "eight")).to.equal(16);
+expect(multiply("two", "nine")).to.equal(18);
+
+expect(multiply("three", "zero")).to.equal(0);
+expect(multiply("three", "one")).to.equal(3);
+expect(multiply("three", "two")).to.equal(6);
+expect(multiply("three", "three")).to.equal(9);
+expect(multiply("three", "four")).to.equal(12);
+expect(multiply("three", "five")).to.equal(15);
+expect(multiply("three", "six")).to.equal(18);
+expect(multiply("three", "seven")).to.equal(21);
+expect(multiply("three", "eight")).to.equal(24);
+expect(multiply("three", "nine")).to.equal(27);
+
+expect(multiply("four", "zero")).to.equal(0);
+expect(multiply("four", "one")).to.equal(4);
+expect(multiply("four", "two")).to.equal(8);
+expect(multiply("four", "three")).to.equal(12);
+expect(multiply("four", "four")).to.equal(16);
+expect(multiply("four", "five")).to.equal(20);
+expect(multiply("four", "six")).to.equal(24);
+expect(multiply("four", "seven")).to.equal(28);
+expect(multiply("four", "eight")).to.equal(32);
+expect(multiply("four", "nine")).to.equal(36);
+
+expect(multiply("five", "zero")).to.equal(0);
+expect(multiply("five", "one")).to.equal(5);
+expect(multiply("five", "two")).to.equal(10);
+expect(multiply("five", "three")).to.equal(15);
+expect(multiply("five", "four")).to.equal(20);
+expect(multiply("five", "five")).to.equal(25);
+expect(multiply("five", "six")).to.equal(30);
+expect(multiply("five", "seven")).to.equal(35);
+expect(multiply("five", "eight")).to.equal(40);
+expect(multiply("five", "nine")).to.equal(45);
+
+expect(multiply("six", "zero")).to.equal(0);
+expect(multiply("six", "one")).to.equal(6);
+expect(multiply("six", "two")).to.equal(12);
+expect(multiply("six", "three")).to.equal(18);
+expect(multiply("six", "four")).to.equal(24);
+expect(multiply("six", "five")).to.equal(30);
+expect(multiply("six", "six")).to.equal(36);
+expect(multiply("six", "seven")).to.equal(42);
+expect(multiply("six", "eight")).to.equal(48);
+expect(multiply("six", "nine")).to.equal(54);
+
+expect(multiply("seven", "zero")).to.equal(0);
+expect(multiply("seven", "one")).to.equal(7);
+expect(multiply("seven", "two")).to.equal(14);
+expect(multiply("seven", "three")).to.equal(21);
+expect(multiply("seven", "four")).to.equal(28);
+expect(multiply("seven", "five")).to.equal(35);
+expect(multiply("seven", "six")).to.equal(42);
+expect(multiply("seven", "seven")).to.equal(49);
+expect(multiply("seven", "eight")).to.equal(56);
+expect(multiply("seven", "nine")).to.equal(63);
+
+expect(multiply("eight", "zero")).to.equal(0);
+expect(multiply("eight", "one")).to.equal(8);
+expect(multiply("eight", "two")).to.equal(16);
+expect(multiply("eight", "three")).to.equal(24);
+expect(multiply("eight", "four")).to.equal(32);
+expect(multiply("eight", "five")).to.equal(40);
+expect(multiply("eight", "six")).to.equal(48);
+expect(multiply("eight", "seven")).to.equal(56);
+expect(multiply("eight", "eight")).to.equal(64);
+expect(multiply("eight", "nine")).to.equal(72);
+
+expect(multiply("nine", "zero")).to.equal(0);
+expect(multiply("nine", "one")).to.equal(9);
+expect(multiply("nine", "two")).to.equal(18);
+expect(multiply("nine", "three")).to.equal(27);
+expect(multiply("nine", "four")).to.equal(36);
+expect(multiply("nine", "five")).to.equal(45);
+expect(multiply("nine", "six")).to.equal(54);
+expect(multiply("nine", "seven")).to.equal(63);
+expect(multiply("nine", "eight")).to.equal(72);
+expect(multiply("nine", "nine")).to.equal(81);
+
 function div(a, b){
   if ( a === "zero" && b === "zero"){
     var a = 0;
