@@ -1092,7 +1092,7 @@ function multiply(a, b){
     var a = 0;
     var b = 0;
   }
-  if ( a ==== "zero" && b === "one"){
+  if ( a === "zero" && b === "one"){
     var a = 0;
     var b = 1;
   }
@@ -1169,8 +1169,8 @@ function multiply(a, b){
     var b = 9;
   }
   if ( a === "two" && b === "zero"){
-    var = 2;
-    var = 0;
+    var a = 2;
+    var b = 0;
   }
   if ( a === "two" && b === "one"){
     var a = 2;
