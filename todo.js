@@ -33,10 +33,15 @@ function editTask(position, newTaskName){
 
 }
 
-function prioritizeTask(task, list){
-
-
+Array.prototype.move = function(from, to){
+  this.splice(to, 0, this.splice(from, 1)[0]);
+  return this;
 }
+)
+/*function prioritizeTask(task, list){
+
+
+}*/
 
 function completeTask(task, position){
   return task[position] = ("[X] " + task[position]);
