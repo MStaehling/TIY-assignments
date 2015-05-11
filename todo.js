@@ -19,7 +19,9 @@ function addTaskToList(task, list){
   // What is the task? parameter task
   // Where is the task goin? parameter list
   // What order / priority? lowest, on the bottom
-  return list.push(task)
+  return list.push({
+  text: task, completed: false
+});
 }
 
 function deleteTask(task, list){
@@ -37,7 +39,7 @@ Array.prototype.move = function(from, to){
   this.splice(to, 0, this.splice(from, 1)[0]);
   return this;
 }
-)
+
 /*function prioritizeTask(task, list){
 
 
@@ -50,26 +52,26 @@ function completeTask(task, position){
 
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
-expect(taskList[0]).to.equal("Remember the milk");
+expect(taskList[0].text).to.equal("Remember the milk");
 expect(taskList.length).to.equal(1);
 expect(taskList.length).to.equal(1);
 addTaskToList("Take out the trash", taskList);
-expect(taskList[1]).to.equal("Take out the trash");
+expect(taskList[1].text).to.equal("Take out the trash");
 expect(taskList.length).to.equal(2);
 
 expect(completeTask).to.exist;
 completeTask(taskList, 1);
-expect(taskList[1]).to.equal("[X] Take out the trash");
+expect(taskList[1].text).to.equal("[X] Take out the trash");
 console.log(taskList);
 // listTasks();
 // expect(listTasks()).to.equal("Remember the milk", "Take out the trash");
-expect(taskList[0]).to.equal("Remember the milk");
+expect(taskList[0].text).to.equal("Remember the milk");
 editTask(0, "Remember the milk and eggs");
-expect(taskList[0]).to.equal("Remember the milk and eggs");
+expect(taskList[0].text).to.equal("Remember the milk and eggs");
 console.log(taskList);
 
 expect(taskList.length).to.equal(2);
 deleteTask(1, taskList);
 expect(taskList.length).to.equal(1);
-expect(taskList[0]).to.equal("Remember the milk and eggs");
+expect(taskList[0].text).to.equal("Remember the milk and eggs");
 console.log(taskList)
