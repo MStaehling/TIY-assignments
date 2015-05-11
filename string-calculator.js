@@ -1,5 +1,28 @@
 var expect = require('chai').expect;
 
+
+//var number = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+
+var item, index = 0;
+while ( index < numbers.length){
+  item = number[index];
+  return index;
+  index + 1;
+}
+
+for (var iteration = 0; iteration < 4; iteration++){}
+
+for (var index = 0; index < numbers.length, index++){
+
+}
+
+
+
+for (var index = 0; index < word.length; index++){
+  item=word[index]
+}
+
+
 function toNumber(word){
   if ( word === "zero" ){
     return 0;
@@ -1605,10 +1628,16 @@ expect(multiply("nine", "seven")).to.equal(63);
 expect(multiply("nine", "eight")).to.equal(72);
 expect(multiply("nine", "nine")).to.equal(81);
 
+/**
+* @param {String} a
+* @param {String} b
+* return {Number} Infinity or 0
+*/
 function div(a, b){
   if ( a === "zero" && b === "zero"){
     var a = 0;
     var b = 0;
+    return Infinity;
   }
   if ( a === "zero" && b === "one"){
     var a = 0;
@@ -2095,7 +2124,7 @@ expect(div("nine", "four")).to.equal(2.25);
 expect(div("nine", "five")).to.equal(1.8);
 expect(div("nine", "eight")).to.equal(1.125);
 expect(div("nine", "nine")).to.equal(1);
-//expect(div("zero", "zero")).to.equal(NaN);
+//expect(div("zero", "zero")).to.equal(Infinity);
 
 console.log(div("zero","six"));
 console.log(div("zero", "zero"));
