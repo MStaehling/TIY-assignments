@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class=" js "><head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Blueprint: Nested Accordion</title>
-		<meta name="description" content="Blueprint: Nested Accordion">
-		<meta name="keywords" content="nested, accordion, simple, vertical, web development, css3, javascript">
-		<meta name="author" content="Codrops">
+		<meta name="description" content="Blueprint: Nested Accordion" />
+		<meta name="keywords" content="nested, accordion, simple, vertical, web development, css3, javascript" />
+		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css">
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-7243260-2']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-	<link rel="stylesheet" type="text/css" href="http://tympanus.net/codrops/adpacks/demoadpacks.css?1431444888985"><script id="_carbonads_projs" type="text/javascript" src="//srv.carbonads.net/ads/C6AILKT.json?segment=placement:codrops&amp;callback=_carbonads_go"></script></head>
-	<body><div class="seoquake-seobar-panel seoquake-seobar-horizontal-inpage" id="seoquake-seobar-panel"><div class="seoquake-seobar-cell"><button class="seoquake-button" title="SEOquake"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/menulogo-enabled.png"></button></div><div class="seoquake-params-panel seoquake-seobar-cell" style="overflow-x:auto!important;"><table><tr class="seoquake-params-row"><td class="seoquake-params-cell" title="Page Information"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/pageinfo/info_12x12.png"><a class="seoquake-params-link" href="#" target="_blank">Info</a></td><td class="seoquake-params-cell" title="Google pagerank"><img src="http://www.google.com/favicon.ico">PR: <a class="seoquake-params-link" href="http://toolbarqueries.google.com/tbr?client=navclient-auto&amp;hl=en&amp;ch=61569475367&amp;ie=UTF-8&amp;oe=UTF-8&amp;features=Rank&amp;q=info:http%3A%2F%2Ftympanus.net%2FBlueprints%2FNestedAccordion%2F" rel="19e1eb72 56106928_0" target="_blank" style="color: blue;">3</a></td><td class="seoquake-params-cell" title="Google index"><img src="http://www.google.com/favicon.ico">I: <a class="seoquake-params-link" href="http://www.google.com/search?hl=en&amp;safe=off&amp;q=site%3Atympanus.net&amp;btnG=Search" rel="19e1eb72 3d6dccf3_1" target="_blank" style="color: blue;">4,770</a></td><td class="seoquake-params-cell" title="SEMrush links"><img src="http://www.semrush.com/images/favicon.ico">L: <a class="seoquake-params-link" href="http://www.semrush.com/info/http%3A%2F%2Ftympanus.net%2FBlueprints%2FNestedAccordion%2F+(links)" rel="19e1eb72 5afc6d59_15" target="_blank" style="color: blue;">6</a></td><td class="seoquake-params-cell" title="SEMrush linkdomain"><img src="http://www.semrush.com/images/favicon.ico">LD: <a class="seoquake-params-link" href="http://www.semrush.com/info/tympanus.net+(links_hostname)" rel="19e1eb72 af4d2e93_16" target="_blank" style="color: blue;">162614</a></td><td class="seoquake-params-cell" title="Bing index"><img src="http://bing.com/favicon.ico">I: <a class="seoquake-params-link" href="http://www.bing.com/search?q=site%3Atympanus.net&amp;FORM=QBRE" rel="19e1eb72 327f2c16_20" target="_blank" style="color: blue;">17,100 </a></td><td class="seoquake-params-cell" title="Alexa rank"><img src="http://www.alexa.com/favicon.ico">Rank: <a class="seoquake-params-link" href="http://www.alexa.com/siteinfo/tympanus.net" rel="19e1eb72 d0dbb3c5_31" target="_blank" style="color: blue;">2254</a></td><td class="seoquake-params-cell" title="Webarchive age"><img src="http://web.archive.org/favicon.ico">Age: <a class="seoquake-params-link" href="http://web.archive.org/web/*/http://tympanus.net" rel="19e1eb72 0177a439_32" target="_blank" style="color: blue;">September 2, 2009</a></td><td class="seoquake-params-cell" title="Delicious index"><img src="http://delicious.com/favicon.ico">I: <a class="seoquake-params-link" href="http://delicious.com/url/19e1eb72ae4f8f2705e15fdb3677e08f" rel="19e1eb72 f70eda11_33" target="_blank" style="color: blue;">n/a</a></td><td class="seoquake-params-cell" title="Twitter Tweets"><img src="http://twitter.com/phoenix/favicon.ico">Tw: <a class="seoquake-params-link" href="https://twitter.com/#!/search/realtime/tympanus.net" rel="19e1eb72 2593ec23_34" target="_blank" style="color: blue;">1148</a></td><td class="seoquake-params-cell" title="FaceBook likes"><img src="http://static.ak.fbcdn.net/rsrc.php/yi/r/q9U99v3_saj.ico">l: <a class="seoquake-params-link" href="http://www.facebook.com/plugins/like.php?layout=button_count&amp;href=http%3A%2F%2Ftympanus.net%2FBlueprints%2FNestedAccordion%2F" rel="19e1eb72 0dd9d391_35" target="_blank" style="color: blue;">19</a></td><td class="seoquake-params-cell" title="Google PlusOne"><img src="http://www.google.com/favicon.ico">+1: <a class="seoquake-params-link" href="https://plusone.google.com/u/0/_/+1/fastbutton?count=true&amp;url=http://tympanus.net/Blueprints/NestedAccordion/" rel="19e1eb72 95d56926_36" target="_blank" style="color: blue;">3</a></td><td class="seoquake-params-cell" title="Whois"><img src="http://www.domaintools.com/favicon.png"><a class="seoquake-params-link" href="http://whois.domaintools.com/tympanus.net?utm_source=seoquake&amp;utm_medium=seoquake&amp;utm_campaign=seoquake" rel="19e1eb72 316dfc2c_37" target="_blank">whois</a></td><td class="seoquake-params-cell" title="Page source"><img src="http://www.google.com/tools/dlpage/res/chrome/images/chrome-16.png"><a class="seoquake-params-link" href="view-source:http://tympanus.net/Blueprints/NestedAccordion/" rel="19e1eb72 99e0ad8a_38" target="_blank">source</a></td><td class="seoquake-params-cell" title="SEMrush Rank"><img src="http://www.semrush.com/images/favicon.ico">Rank: <a class="seoquake-params-link" href="http://www.semrush.com/info/tympanus.net?ref=174537735" rel="19e1eb72 425d6e42_41" target="_blank" style="color: blue;">64755</a></td><td class="seoquake-params-cell" title="Keywords density"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/density_12x12.png"><a class="seoquake-params-link" href="#" target="_blank">Density</a></td><td class="seoquake-params-cell" title="Diagnosis"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/diagnosis/diagnosis_12x12.png"><a class="seoquake-params-link" href="#" target="_blank">Diagnosis</a></td><td class="seoquake-params-cell" title="Internal/External links"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/menulogo-enabled.png">Links: <a class="seoquake-params-link" href="#" target="_blank">4</a> | <a class="seoquake-params-link" href="#" target="_blank">0</a></td></tr></table></div><div class="seoquake-seobar-cell"><button class="seoquake-button" title="Close"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/close.png"></button></div><div style="clear:both;"></div></div>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
 		<div class="container">
 			<header class="clearfix">
-				<span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<span>Blueprint</span>
 				<h1>Nested Accordion</h1>
 				<nav>
-					<a href="http://tympanus.net/Blueprints/VerticalIconMenu/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<a href="http://tympanus.net/Blueprints/QuotesRotator/" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a>
-					<a href="http://tympanus.net/codrops/?p=14588" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+					<a href="http://tympanus.net/Blueprints/VerticalIconMenu/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
+					<a href="http://tympanus.net/codrops/?p=14588" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
 				</nav>
-			</header>
+			</header>	
 			<div class="main">
 				<ul id="cbp-ntaccordion" class="cbp-ntaccordion">
 					<li>
@@ -191,11 +178,20 @@
 				</ul>
 			</div>
 		</div>
-		<script src="scripts.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpNTAccordion.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
 
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
 
+			} );
 		</script>
-		<script src="http://tympanus.net/codrops/adpacks/demoad.js"></script><div id="cdawrap"><span id="cda-remove"></span><script type="text/javascript" async="" id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=codrops"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="//srv.carbonads.net/ads/click/x/GTND423IC6BDVKJJCT74YKQWCKYIV2JWCKYICZ3JCE7I4237CTADKK7KC6BDCKQWCE7DEK3EHJNCLSIZ?segment=placement:codrops;" class="carbon-img" target="_blank"><img src="//assets.servedby-buysellads.com/p/manage/asset/id/22107" alt="" border="0" height="100" width="130" style="max-width:130px;"></a><a href="//srv.carbonads.net/ads/click/x/GTND423IC6BDVKJJCT74YKQWCKYIV2JWCKYICZ3JCE7I4237CTADKK7KC6BDCKQWCE7DEK3EHJNCLSIZ?segment=placement:codrops;" class="carbon-text" target="_blank">ruxit: monitoring websites, applications, (virtual) servers, networks and cloud</a></span><a href="http://carbonads.net/" class="carbon-poweredby" target="_blank">ads via Carbon</a></span></div></div>
-
-
-</body></html>
+	</body>
+</html>
