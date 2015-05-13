@@ -19,7 +19,7 @@ var elements = document.querySelectorAll("h3");
 
 _.forEach(elements, function(element, index, elements){
   element.addEventListener('click', function(){
-    console.log(elements, index, elements);
+  //  console.log(elements, index, elements);
      element.parentElement.classList.toggle('cbp-ntopen');
    });
 });
