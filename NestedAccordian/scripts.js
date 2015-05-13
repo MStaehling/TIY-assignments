@@ -5,7 +5,7 @@
 document.head.parentElement.className = "js"; // It's Alive!
 
 
-var elements = document.querySelectorAll("h3");
+var elements = document.querySelectorAll(".cbp-nttrigger");
 
 
 //WTF JS>>>>WTF!
@@ -24,10 +24,10 @@ _.forEach(elements, function(element, index, elements){
    });
 });
 // opens all of them up, not just 1....
-var nestedelements = document.querySelectorAll("h4");
+/*var nestedelements = document.querySelectorAll("h4");
 
 _.forEach(nestedelements, function(element, index, elements){
   element.addEventListener('click', function(){
     element.parentElement.classList.toggle('cbp-ntopen');
   });
-});
+});*/
