@@ -23,3 +23,11 @@ _.forEach(elements, function(element, index, elements){
      element.parentElement.classList.toggle('cbp-ntopen');
    });
 });
+// opens all of them up, not just 1....
+var elem = document.querySelectorAll("h4");
+
+_.forEach(elem, function(element,index, elem){
+  element,addEventListener('click', function(){
+    element.parentElement.classList.toggle('cbp-ntopen');
+  });
+});
