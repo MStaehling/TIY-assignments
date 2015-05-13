@@ -24,10 +24,10 @@ _.forEach(elements, function(element, index, elements){
    });
 });
 // opens all of them up, not just 1....
-var elem = document.querySelectorAll("h4");
+var elements = document.querySelectorAll("h4");
 
-_.forEach(elem, function(element,index, elem){
-  element,addEventListener('click', function(){
+_.forEach(elements, function(element, index, elements){
+  element.addEventListener('click', function(){
     element.parentElement.classList.toggle('cbp-ntopen');
   });
 });
