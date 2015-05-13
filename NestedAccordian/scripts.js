@@ -24,9 +24,9 @@ _.forEach(elements, function(element, index, elements){
    });
 });
 // opens all of them up, not just 1....
-var elements = document.querySelectorAll("h4");
+var nestedelements = document.querySelectorAll("h4");
 
-_.forEach(elements, function(element, index, elements){
+_.forEach(nestedelements, function(element, index, elements){
   element.addEventListener('click', function(){
     element.parentElement.classList.toggle('cbp-ntopen');
   });
