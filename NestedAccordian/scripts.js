@@ -1,5 +1,5 @@
 /*alert("It's Alive!");*/
-//debugger;
+//debugger;testing terminal
 
 
 document.head.parentElement.className = "js"; // It's Alive!
