@@ -3,7 +3,7 @@
 // What element should listen for that event? .cbp-nttrigger
 
 
-$('cbp-nttrigger').on('click', function(event){
+$('.cbp-nttrigger').on('click', function(event){
   $(event.target).parent().toggleClass('cbp-ntopen');
 });
 // What should I do when tht event fires?
