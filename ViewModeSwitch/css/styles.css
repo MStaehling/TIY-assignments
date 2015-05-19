@@ -1,0 +1,33 @@
+a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.cbp-vm-options {
+  text-align: right;
+}
+
+.clearfix {
+  text-align: center;
+}
+
+ul li {
+  display: block;
+}
+
+.main, ul {
+  border: 1px  solid blue;
+}
+
+nav {
+  display: inline;
+}
+
+.main {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+ul {
+  border-top: none;
+}
