@@ -1,0 +1,54 @@
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ilMlEgjHd4Vc7RjQ9bPqfPWY2toFEfaQbXjEIm4tb-AmyyT1NA");
+}
+
+/*@media screen and (max-width: 55em){
+  .cbp-ntaccordian {
+     margin: auto;
+     text-align: center;
+   }
+}*/
+
+
+
+h3, h4 {
+
+}
+
+h3 {
+  font-size: 40px;
+  border-bottom: 1px solid lightgrey;
+  color: #65B8D8;
+  font-family: Cursive;
+  margin: auto;
+  padding: 1em;
+}
+
+h4 {
+  font-size: 30px;
+  color: #EE8930;
+  font-style: italic;
+}
+
+h5 {
+  color: lime;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+.js .cbp-ntcontent{
+  display: none;
+}
+
+.cbp-ntopen > .cbp-ntcontent{
+  display: block;
+}
+
+p {
+  color: yellow;
+  font-family: Sans-serif;
+}
+
+.cbp-nttrigger {
+	cursor: pointer;
+}
