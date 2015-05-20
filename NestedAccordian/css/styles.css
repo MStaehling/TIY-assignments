@@ -9,7 +9,12 @@ body {
    }
 }*/
 
+h3.cbp-nttrigger::before {
+  list-style-image: url(1432151655_Gold_Sword.png);
+}
+ul {
 
+}
 
 h3, h4 {
 
@@ -49,6 +54,30 @@ p {
   font-family: Sans-serif;
 }
 
-.cbp-nttrigger {
+.cbp-nttrigger:hover {
 	cursor: pointer;
+}
+
+h4.cbp-nttrigger::before {
+  content: '\20d5';
+  color: blue;
+  padding-right: .5em;
+}
+
+h4.cbp-ntopen > .cbp-nttrigger::before {
+  content: '\2934'
+  color: lime;
+}
+
+h3.cbp-nttrigger::before {
+  content: '\2694';
+  color: pink;
+  padding-right: .5em;
+}
+
+.cbp-ntopen > .cbp-nttrigger::before {
+  content: '\1f41a';
+}
+h3.cbp-nttrigger:hover::before {
+  font-weight: bold;
 }
