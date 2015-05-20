@@ -1,0 +1,53 @@
+/*missing / broken images
+body text: cornflower blue
+	non-default font: ???
+	tabs!
+	decorative icons next to each tab
+	laid out side-by-side (horizontally)
+	bottom border under all tabs except active
+spacing between tabs: ???px / ???pt
+active tabs:
+	top border is heavier
+	no bottom border
+	text and icon are cornflower blue
+inactive tabs:
+	text and icons are light gray
+	border thin and light gray
+	turn darker when hovered
+tabs are centered
+only show 3 content sections at a time
+show them in a 3 up*/
+
+body {
+	font-family: Arial, sans-serif;
+	color: cornflowerblue;
+}
+/* ^ represents start*/
+.content section[id^="section-"] {
+	display: none;
+	padding: 1em;
+}
+
+.content section[id^="section-"].content-current {
+	display: block;
+}
+
+.content section[id^="section-"]::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+.mediabox {
+	box-sizing: border-box;
+	width: 33%;
+	padding: 1em;
+	margin: auto;
+	float: left;
+}
