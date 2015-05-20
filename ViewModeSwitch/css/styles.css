@@ -7,27 +7,78 @@ a {
   text-align: right;
 }
 
-.clearfix {
-  text-align: center;
+header span, h1 {
+  text-align: left;
+  color: blue;
 }
 
-ul li {
-  display: block;
+span {
+  text-align: right:
+  hoover: pointer;
+  visited: green;
 }
 
-.main, ul {
-  border: 1px  solid blue;
+.bp-icon {
+  text-align: right;
+}
+
+.cbp-vm-image, .cbp-vm-title, .cbp-vm-details, .cbp-vm-price, .cbp-vm-add {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.cbp-vm-details {
+  width: 200px;
+}
+
+a img {
+  width: 80px;
+  height: 80px;
+}
+
+/*.cbp-vm-image {
+  width: 80px;
+  height: 80px;
+}*/
+
+.cbp-vm-price {
+  width: 80px;
+  margin: 5px;
+}
+
+.main {
+  border: 3px  solid blue;
+  margin: 50px;
+  width: 80%;
 }
 
 nav {
   display: inline;
 }
 
-.main {
-  border-bottom: none;
-  text-decoration: underline;
+.cbp-vm-options {
+  border-bottom: 3px solid green;
+  width: 95%;
+  margin: auto;
+  height: 70px;
+  padding: auto;
+}
+
+.cbp-vm-switcher ul {
+  display: table;
+}
+
+h3 {
+  color: purple;
+  font-size: 20px;
+  font-family: Verdana;
+  width: 150px;
 }
 
 ul {
   border-top: none;
+}
+
+.cbp-vm-switcher .cbp-vm-view-grid {
+  display: inline-block;
 }
