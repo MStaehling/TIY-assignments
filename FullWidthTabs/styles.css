@@ -41,8 +41,11 @@ body {
 nav ul li {
 	display: inline-block;
 	font-size: 20pt;
-	/*padding: .5em;
-	width: 15%;*/
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
 
 }
 
@@ -50,25 +53,30 @@ nav ul {
 	text-align: center;
 	border-bottom: 1px solid lightgrey;
 	margin-top: 5em;
-	padding-bottom: .7em;
+	/*padding-bottom: .7em;*/
 }
 
 
 a {
-	border-left: 1px solid lightgrey;
+	/*border-left: 1px solid lightgrey;
 	border-right: 1px solid lightgrey;
-	border-top: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;*/
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	hover: pointer;
 	padding-top: .5em;
-	padding-bottom: .5em
+	padding-bottom: .5em;
 }
 img {
 	width: 100%;
 }
 
-
+.tab-current {
+	border-top: 3px solid cornflowerblue;
+	border-left: 1px solid cornflowerblue;
+	border-right: 1px solid cornflowerblue;
+	padding-top: -3px;
+}
 
 .mediabox {
 	box-sizing: border-box;
