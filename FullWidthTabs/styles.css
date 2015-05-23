@@ -19,69 +19,92 @@ only show 3 content sections at a time
 show them in a 3 up*/
 
 body {
-	font-family: Arial, sans-serif;
-	color: cornflowerblue;
+  font-family: Arial, sans-serif;
+  color: cornflowerblue;
 }
 /* ^ represents start*/
+
 .content section[id^="section-"] {
-	display: none;
-	padding: 1em;
+  display: none;
+  padding: 1em;
 }
-
 .content section[id^="section-"].content-current {
-	display: block;
+  display: block;
 }
-
 .content section[id^="section-"]::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-
+nav {
+	height: 6em;
+}
 nav ul li {
-	display: inline-block;
-	font-size: 20pt;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border-left: 1px solid lightgrey;
-	border-right: 1px solid lightgrey;
-	border-top: 1px solid lightgrey;
-
+  display: inline-block;
+  font-size: 20pt;
+  padding-top: ;
+  padding-bottom: ;
+  width: 15%;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+	margin-left: .15em;
+	margin-right: .15em;
+	height: 100%;
 }
-
+.info {
+  text-align: center;
+}
+span:hover {
+  color: darkgrey;
+}
+span {
+  padding-left: 30px;
+  height: 100%;
+}
+.tab1 span {
+  background: url('img/store.png') no-repeat;
+  padding-left: 30px;
+  color: lightgrey;
+}
+.tab2 span {
+  background: url('img/app_store.png') no-repeat;
+}
 nav ul {
-	text-align: center;
-	border-bottom: 1px solid lightgrey;
-	margin-top: 5em;
-	/*padding-bottom: .7em;*/
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 3.5em;
 }
-
 
 a {
-	/*border-left: 1px solid lightgrey;
-	border-right: 1px solid lightgrey;
-	border-top: 1px solid lightgrey;*/
-	padding-right: 1.5em;
-	padding-left: 1.5em;
-	hover: pointer;
-	padding-top: .5em;
-	padding-bottom: .5em;
+	display: block;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  hover: pointer;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-decoration: none;
+  line-height: 1;
 }
 img {
-	width: 100%;
+  width: 100%;
 }
-
 .tab-current {
-	border-top: 3px solid cornflowerblue;
-	border-left: 1px solid cornflowerblue;
-	border-right: 1px solid cornflowerblue;
-	padding-top: -3px;
+  border-top: 3px solid cornflowerblue;
+  border-left: 1px solid cornflowerblue;
+  border-right: 1px solid cornflowerblue;
+  border-bottom: 1px solid white;
 }
-
+.tab-current span {
+	color: cornflowerblue;
+}
+a:hover {
+  color: darkgrey;
+}
 .mediabox {
-	box-sizing: border-box;
-	width: 33%;
-	padding: 1em;
-	margin: auto;
-	float: left;
+  box-sizing: border-box;
+  width: 33%;
+  padding: 1em;
+  margin: auto;
+  float: left;
 }

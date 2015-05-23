@@ -1,17 +1,17 @@
-(function(window) {
-  var BASE_URL = 'http://lorempixel.com/350/200/abstract';
-
-  function rando(limit) {
-    return Math.floor(Math.random() * limit);
-  }
-
-  function randoImage() {
-
-    return BASE_URL + "?" + rando(1000);
-  }
-
-  $('img').attr('src', randoImage);
-})(window);
+// (function(window) {
+//   var BASE_URL = 'http://lorempixel.com/350/200/abstract';
+//
+//   function rando(limit) {
+//     return Math.floor(Math.random() * limit);
+//   }
+//
+//   function randoImage() {
+//
+//     return BASE_URL + "?" + rando(1000);
+//   }
+//
+//   $('img').attr('src', randoImage);
+// })(window);
 
 var tab1 = document.querySelector('.tab1');
 var tab2 = document.querySelector('.tab2');
