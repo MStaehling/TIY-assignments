@@ -13,109 +13,199 @@
 //   $('img').attr('src', randoImage);
 // })(window);
 
-var tab1 = document.querySelector('.tab1');
-var tab2 = document.querySelector('.tab2');
-var tab3 = document.querySelector('.tab3');
-var tab4 = document.querySelector('.tab4');
-var tab5 = document.querySelector('.tab5');
-var Section1 = document.querySelector('#section-1');
-var Section2 = document.querySelector('#section-2');
-var Section3 = document.querySelector('#section-3');
-var Section4 = document.querySelector('#section-4');
-var Section5 = document.querySelector('#section-5');
+
+var tab1 = $('.tab1');
+var tab2 = $('.tab2');
+var tab3 = $('.tab3');
+var tab4 = $('.tab4');
+var tab5 = $('.tab5');
+var Section1 = $('#section-1');
+var Section2 = $('#section-2');
+var Section3 = $('#section-3');
+var Section4 = $('#section-4');
+var Section5 = $('#section-5');
 
 
-var listItems = document.querySelectorAll('li');
-var contentBlock = document.querySelectorAll('section');
+var listItems = $('li');
+var contentBlock = $('section');
 
 
+// var tab1 = document.querySelector('.tab1');
+// var tab2 = document.querySelector('.tab2');
+// var tab3 = document.querySelector('.tab3');
+// var tab4 = document.querySelector('.tab4');
+// var tab5 = document.querySelector('.tab5');
+// var Section1 = document.querySelector('#section-1');
+// var Section2 = document.querySelector('#section-2');
+// var Section3 = document.querySelector('#section-3');
+// var Section4 = document.querySelector('#section-4');
+// var Section5 = document.querySelector('#section-5');
+//
+//
+// var listItems = document.querySelectorAll('li');
+// var contentBlock = document.querySelectorAll('section');
 
-tab1.addEventListener('click', function() {
-  _.forEach(listItems, function(element) {
-    if (element.className === 'tab-current') {
-      element.classList.remove('tab-current');
-    };
-  });
-  _.forEach(contentBlock, function(element) {
-    if (element.className === 'content-current') {
-      element.classList.remove('content-current');
-    };
-  });
-  this.parentNode.classList.add('tab-current');
-  Section1.classList.add('content-current');
+$('li').click(function(){
+  $('a').parent().removeClass('tab-current');
+  $('section').removeClass('content-current');
+  $('section-2').addClass('content-current');
+  $(this).addClass('tab-current');
 });
 
-tab2.addEventListener('click', function() {
-  _.forEach(listItems, function(element) {
-    if (element.className === 'tab-current') {
-      element.classList.remove('tab-current');
-    };
-  });
-  _.forEach(contentBlock, function(element) {
-    if (element.className === 'content-current') {
-      element.classList.remove('content-current');
-    };
-  });
-  this.parentNode.classList.add('tab-current');
-  Section2.classList.add('content-current');
-});
 
-tab3.addEventListener('click', function() {
-  _.forEach(listItems, function(element) {
-    if (element.className === 'tab-current') {
-      element.classList.remove('tab-current');
-    };
-  });
-  _.forEach(contentBlock, function(element) {
-    if (element.className === 'content-current') {
-      element.classList.remove('content-current');
-    };
-  });
-  this.parentNode.classList.add('tab-current');
-  Section3.classList.add('content-current');
-});
-
-tab4.addEventListener('click', function() {
-  _.forEach(listItems, function(element) {
-    if (element.className === 'tab-current') {
-      element.classList.remove('tab-current');
-    };
-  });
-  _.forEach(contentBlock, function(element) {
-    if (element.className === 'content-current') {
-      element.classList.remove('content-current');
-    };
-  });
-  this.parentNode.classList.add('tab-current');
-  Section4.classList.add('content-current');
-});
-
-tab5.addEventListener('click', function() {
-  _.forEach(listItems, function(element) {
-    if (element.className === 'tab-current') {
-      element.classList.remove('tab-current');
-    };
-  });
-  _.forEach(contentBlock, function(element) {
-    if (element.className === 'content-current') {
-      element.classList.remove('content-current');
-    };
-  });
-  this.parentNode.classList.add('tab-current');
-  Section5.classList.add('content-current');
-});
-
-//removeClass(element, "foo");element.className = "foo";
-
-// tab2.$('click', function(){
-//   $('li').removeClass('tab-current');
-//   tab2.addClass('tab-current');
+// $('.tab1').click(function() {
+//   $('li').each(function(element) {
+//     if (element.className === 'tab-current') {
+//       element.removeClass('tab-current');
+//     };
+//   });
+//   $('section').each(function(element) {
+//     if (element.className === 'content-current') {
+//       element.removeClass('content-current');
+//     };
+//   });
+//   $('.tab1').parent().addClass('tab-current');
+//   $('#section-1').addClass('content-current');
+// });
+//
+// $('.tab2').click(function() {
+//   $('li').each(function(element) {
+//     if (element.className === 'tab-current') {
+//       element.removeClass('tab-current');
+//     };
+//   });
+//   $('section').each(function(element) {
+//     if (element.className === 'content-current') {
+//       element.removeClass('content-current');
+//     };
+//   });
+//   $('.tab2').parent().addClass('tab-current');
+//   $('#section-2').addClass('content-current');
+// });
+//
+// $('.tab3').click(function() {
+//   $('li').each(function(element) {
+//     if (element.className === 'tab-current') {
+//       element.removeClass('tab-current');
+//     };
+//   });
+//   $('section').each(function(element) {
+//     if (element.className === 'content-current') {
+//       element.removeClass('content-current');
+//     };
+//   });
+//   this.parentNode.addClass('tab-current');
+//   $('#section-3').addClass('content-current');
+// });
+//
+// $('.tab4').click(function() {
+//   $('li').each(function(element) {
+//     if (element.className === 'tab-current') {
+//       element.removeClass('tab-current');
+//     };
+//   });
+//   $('section').each(function(element) {
+//     if (element.className === 'content-current') {
+//       element.removeClass('content-current');
+//     };
+//   });
+//   this.parentNode.addClass('tab-current');
+//   $('#section-4').addClass('content-current');
+// });
+//
+// $('.tab5').click(function() {
+//   $('li').each(function(element) {
+//     if (element.className === 'tab-current') {
+//       element.removeClass('tab-current');
+//     };
+//   });
+//   $('section').each(function(element) {
+//     if (element.className === 'content-current') {
+//       element.removeClass('content-current');
+//     };
+//   });
+//   this.parent().addClass('tab-current');
+//   $('#section-5').addClass('content-current');
 // });
 
-// $('li').each(function(){
-//   $('li').removeClass('tab-current');
-//   $('li').addClass('tab-current');
-// })
+
+//Vanilla JS
+// tab1.addEventListener('click', function() {
+//   _.forEach(listItems, function(element) {
+//     if (element.className === 'tab-current') {
+//       element.classList.remove('tab-current');
+//     };
+//   });
+//   _.forEach(contentBlock, function(element) {
+//     if (element.className === 'content-current') {
+//       element.classList.remove('content-current');
+//     };
+//   });
+//   this.parentNode.classList.add('tab-current');
+//   Section1.classList.add('content-current');
+// });
+//
+// tab2.addEventListener('click', function() {
+//   _.forEach(listItems, function(element) {
+//     if (element.className === 'tab-current') {
+//       element.classList.remove('tab-current');
+//     };
+//   });
+//   _.forEach(contentBlock, function(element) {
+//     if (element.className === 'content-current') {
+//       element.classList.remove('content-current');
+//     };
+//   });
+//   this.parentNode.classList.add('tab-current');
+//   Section2.classList.add('content-current');
+// });
+//
+// tab3.addEventListener('click', function() {
+//   _.forEach(listItems, function(element) {
+//     if (element.className === 'tab-current') {
+//       element.classList.remove('tab-current');
+//     };
+//   });
+//   _.forEach(contentBlock, function(element) {
+//     if (element.className === 'content-current') {
+//       element.classList.remove('content-current');
+//     };
+//   });
+//   this.parentNode.classList.add('tab-current');
+//   Section3.classList.add('content-current');
+// });
+//
+// tab4.addEventListener('click', function() {
+//   _.forEach(listItems, function(element) {
+//     if (element.className === 'tab-current') {
+//       element.classList.remove('tab-current');
+//     };
+//   });
+//   _.forEach(contentBlock, function(element) {
+//     if (element.className === 'content-current') {
+//       element.classList.remove('content-current');
+//     };
+//   });
+//   this.parentNode.classList.add('tab-current');
+//   Section4.classList.add('content-current');
+// });
+//
+// tab5.addEventListener('click', function() {
+//   _.forEach(listItems, function(element) {
+//     if (element.className === 'tab-current') {
+//       element.classList.remove('tab-current');
+//     };
+//   });
+//   _.forEach(contentBlock, function(element) {
+//     if (element.className === 'content-current') {
+//       element.classList.remove('content-current');
+//     };
+//   });
+//   this.parentNode.classList.add('tab-current');
+//   Section5.classList.add('content-current');
+// });
+
+
 
 //THIS WORKS BUT DON'T COMPLETELY UNDERSTAND Y
 // $('ul').each(function(){
