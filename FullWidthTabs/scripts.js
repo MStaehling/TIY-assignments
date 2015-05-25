@@ -30,95 +30,49 @@
 // var listItems = document.querySelectorAll('li');
 // var contentBlock = document.querySelectorAll('section');
 
-$('li').click(function(){
-  $('a').parent().removeClass('tab-current');
-  $('section').removeClass('content-current');
-  $(this).addClass('tab-current');
-  $('section').click(function(){
-    $(this).addClass('content-current');
+
+$(function() {
+  $('li').click(function() {
+    var $panel = $(this).closest('li');
+    $panel.find('.tab-current').removeClass('tab-current');
+    $(this).addClass('tab-current');
+
+
+    var contentShow = $(this).attr('href');
+    $panel.find('.content-current').slideUp(300, newContent);
+
+    function newContent() {
+      $(this).removeClass('content-current');
+      $(contentShow).slideDown(300, function() {
+
+        $(this).addClass('content-current');
+      });
+    }
   });
-  //$(this.'section').addClass('content-current');
-  //$($('section').hash).show();
 });
 
+
+// $(function() {
+//   $('li').click(function() {
+//     $('a').parent().removeClass('tab-current');
+//     $(this).addClass('tab-current');
+//     $('section').removeClass('content-current');
+//     var contentShow = $(this).attr('href');
+//     $(contentShow).addClass('content-current');
+//
+//     $(contentShow).show(function() {
+//       $('section').removeClass('content-current');
+//       $(this).addClass('content-current');
+//     });
+//     //$(this.'section').addClass('content-current');
+//     //$($('section').hash).show();
+//   });
+// });
 // $('section').click(function(){
 //   $(this).addClass('content-current');
 // })
 
-// $('.tab1').click(function() {
-//   $('li').each(function(element) {
-//     if (element.className === 'tab-current') {
-//       element.removeClass('tab-current');
-//     };
-//   });
-//   $('section').each(function(element) {
-//     if (element.className === 'content-current') {
-//       element.removeClass('content-current');
-//     };
-//   });
-//   $('.tab1').parent().addClass('tab-current');
-//   $('#section-1').addClass('content-current');
-// });
-//
-// $('.tab2').click(function() {
-//   $('li').each(function(element) {
-//     if (element.className === 'tab-current') {
-//       element.removeClass('tab-current');
-//     };
-//   });
-//   $('section').each(function(element) {
-//     if (element.className === 'content-current') {
-//       element.removeClass('content-current');
-//     };
-//   });
-//   $('.tab2').parent().addClass('tab-current');
-//   $('#section-2').addClass('content-current');
-// });
-//
-// $('.tab3').click(function() {
-//   $('li').each(function(element) {
-//     if (element.className === 'tab-current') {
-//       element.removeClass('tab-current');
-//     };
-//   });
-//   $('section').each(function(element) {
-//     if (element.className === 'content-current') {
-//       element.removeClass('content-current');
-//     };
-//   });
-//   this.parentNode.addClass('tab-current');
-//   $('#section-3').addClass('content-current');
-// });
-//
-// $('.tab4').click(function() {
-//   $('li').each(function(element) {
-//     if (element.className === 'tab-current') {
-//       element.removeClass('tab-current');
-//     };
-//   });
-//   $('section').each(function(element) {
-//     if (element.className === 'content-current') {
-//       element.removeClass('content-current');
-//     };
-//   });
-//   this.parentNode.addClass('tab-current');
-//   $('#section-4').addClass('content-current');
-// });
-//
-// $('.tab5').click(function() {
-//   $('li').each(function(element) {
-//     if (element.className === 'tab-current') {
-//       element.removeClass('tab-current');
-//     };
-//   });
-//   $('section').each(function(element) {
-//     if (element.className === 'content-current') {
-//       element.removeClass('content-current');
-//     };
-//   });
-//   this.parent().addClass('tab-current');
-//   $('#section-5').addClass('content-current');
-// });
+
 
 
 //Vanilla JS
@@ -235,12 +189,3 @@ $('li').click(function(){
 //       e.preventDefault();
 //     });
 //   });
-
-
-
-//$('#MyElement').toggleClass('MyClass');
-// $('#MyElement').addClass('MyClass');
-//
-// $('#MyElement').removeClass('MyClass');
-//
-// if ( $('#MyElement').hasClass('MyClass') )
