@@ -14,21 +14,6 @@
 // })(window);
 
 
-var tab1 = $('.tab1');
-var tab2 = $('.tab2');
-var tab3 = $('.tab3');
-var tab4 = $('.tab4');
-var tab5 = $('.tab5');
-var Section1 = $('#section-1');
-var Section2 = $('#section-2');
-var Section3 = $('#section-3');
-var Section4 = $('#section-4');
-var Section5 = $('#section-5');
-
-
-var listItems = $('li');
-var contentBlock = $('section');
-
 
 // var tab1 = document.querySelector('.tab1');
 // var tab2 = document.querySelector('.tab2');
@@ -48,10 +33,17 @@ var contentBlock = $('section');
 $('li').click(function(){
   $('a').parent().removeClass('tab-current');
   $('section').removeClass('content-current');
-  $('section-2').addClass('content-current');
   $(this).addClass('tab-current');
+  $('section').click(function(){
+    $(this).addClass('content-current');
+  });
+  //$(this.'section').addClass('content-current');
+  //$($('section').hash).show();
 });
 
+// $('section').click(function(){
+//   $(this).addClass('content-current');
+// })
 
 // $('.tab1').click(function() {
 //   $('li').each(function(element) {
