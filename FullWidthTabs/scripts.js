@@ -14,7 +14,7 @@
 // })(window);
 
 
-
+//Used with the Vanilla
 // var tab1 = document.querySelector('.tab1');
 // var tab2 = document.querySelector('.tab2');
 // var tab3 = document.querySelector('.tab3');
@@ -31,23 +31,6 @@
 // var contentBlock = document.querySelectorAll('section');
 
 
-// $(function() {
-//   $('.tabs nav ul li').on('click', function() {
-//     var $panel = $(this).closest('ul');
-//     $panel.find('.tab-current').removeClass('tab-current');
-//     $(this).addClass('tab-current');
-//
-//
-//     var contentShow = $(this).attr('href');
-//     $panel.find('.tabs .content-current').hide(function() {
-//       $(this).removeClass('content-current');
-//       $(contentShow).show(function() {
-//
-//         $(this).addClass('content-current');
-//       });
-//     });
-//   });
-// });
 
 
 $(function() {
@@ -55,7 +38,7 @@ $(function() {
     $('a').parent().removeClass('tab-current');
     $(this).addClass('tab-current');
     $('section').removeClass('content-current');
-    $($(this).children().attr('href')).addClass('content-current');
+    $($(this).children('a').attr('href')).addClass('content-current');
   });
 });
 
