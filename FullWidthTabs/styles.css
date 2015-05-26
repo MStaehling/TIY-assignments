@@ -23,20 +23,24 @@ show them in a 3 up*/
     display: none;
     clear: both;
   }*/
+  .content-current {
+    width: auto;
+  }
   .mediabox {
     display: block;
     float: none;
     clear: both;
+    width: 95%;
   }
   .mediabox img {
     float: left;
     width: 40%;
     clear:left;
   }
-  .mediabox p {
+  .mediabox p, .mediabox h3 {
     margin-left: 40%;
     text-align: left;
-    clear: right;
+    clear: left;
     float: right;
   }
   .mediabox:after {
