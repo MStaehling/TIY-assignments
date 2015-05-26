@@ -17,51 +17,17 @@ inactive tabs:
 tabs are centered
 only show 3 content sections at a time
 show them in a 3 up*/
-@media (max-width: 840px){
-  /*.content-current {
-    content: "";
-    display: none;
-    clear: both;
-  }*/
-  .content-current {
-    width: auto;
-  }
-  .mediabox {
-    display: block;
-    float: none;
-    clear: both;
-    width: 95%;
-  }
-  .mediabox img {
-    float: left;
-    width: 40%;
-    clear:left;
-  }
-  .mediabox p, .mediabox h3 {
-    margin-left: 40%;
-    text-align: left;
-    clear: left;
-    float: right;
-  }
-  .mediabox:after {
-  		clear: both;
-  	}
-  span {
-    display:none;
-  }
-}
+
 body {
   font-family: Arial, sans-serif;
   color: cornflowerblue;
 }
 /* ^ represents start*/
+
 @font-face {
   font-family: 'typicons';
   src: url("bower_components/typicons/src/font/typicons.eot");
-  src: url("bower_components/typicons/src/font/typicons.eot?#iefix") format('embedded-opentype'),
-       url("bower_components/typicons/src/font/typicons.woff") format('woff'),
-       url("bower_components/typicons/src/font/typicons.ttf") format('truetype'),
-       url("bower_components/typicons/src/font/typicons.svg#typicons") format('svg');
+  src: url("bower_components/typicons/src/font/typicons.eot?#iefix") format('embedded-opentype'), url("bower_components/typicons/src/font/typicons.woff") format('woff'), url("bower_components/typicons/src/font/typicons.ttf") format('truetype'), url("bower_components/typicons/src/font/typicons.svg#typicons") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,7 +44,7 @@ body {
   clear: both;
 }
 nav {
-	height:auto;
+  height: auto;
 }
 .content {
   margin-top: 2em;
@@ -86,23 +52,37 @@ nav {
 .container {
   display: block;
 }
-nav ul li {
+#tabs nav ul li {
+  border-color: cornflowerblue;
   display: inline-block;
   font-size: 20pt;
   width: 16%;
-	margin-left: .15em;
-	margin-right: .15em;
-  padding-top: ;
-  padding-bottom: ;
-  border-left: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
-  border-top: 1px solid lightgrey;
+  margin: auto .15em;
+  border: 1px solid lightgrey;
+  border-bottom: 1px solid;
+  border-bottom-color: transparent;
+  position: relative;
+  border-bottom: none;
   /*position: relative;*/
+
   line-height: 2em;
   text-align: center;
   position: relative;
-  top: 2px;
+  /*box-sizing: border-box;*/
+}
+#tabs nav ul li.tab-current {
+  border-top: 3px solid cornflowerblue;
+  border-left: 1px solid cornflowerblue;
+  border-right: 1px solid cornflowerblue;
+  top: 1px;
   box-sizing: border-box;
+  padding-bottom: ;
+}
+#tabs nav ul li.tab-current span {
+  border-color: cornflowerblue;
+  border-bottom-color: white;
+  border-top-width: 3px;
+  /*border-bottom: transparent;*/
 }
 .info {
   text-align: center;
@@ -114,15 +94,15 @@ span {
   text-align: center;
   color: lightgrey;
 }
-nav ul {
+#tabs nav ul {
   text-align: center;
   border-bottom: 1px solid lightgrey;
   margin-top: 3em;
   margin-bottom: -.3em;
+  padding-left: 0px;
 }
-
-a {
-	/*display: block;*/
+#tabs nav ul li a {
+  display: block;
   padding-right: 1.15em;
   padding-left: 1.15em;
   padding-top: .5em;
@@ -131,26 +111,27 @@ a {
   line-height: 1.5;
   white-space: nowrap;
   text-align: center;
-
 }
 img {
   width: 100%;
 }
-.tab-current {
-  border-top: 3px solid cornflowerblue;
-  border-left: 1px solid cornflowerblue;
-  border-right: 1px solid cornflowerblue;
-  border-bottom: 1px solid white;
-  position: relative;
-  top: 1px;
-  box-sizing: border-box;
-  padding-bottom: ;
-}
-.tab-current span {
-	color: cornflowerblue;
-}
 a:hover {
   color: darkgrey;
+}
+a.tabs1 {
+  content: ;
+}
+a.tabs2 {
+  content: ;
+}
+a.tabs3 {
+  content: ;
+}
+a.tabs4 {
+  content: ;
+}
+a.tabs5 {
+  content: ;
 }
 .mediabox {
   box-sizing: border-box;
@@ -158,5 +139,60 @@ a:hover {
   padding: 1em;
   margin: auto;
   float: left;
-	line-height: 1;
+  line-height: 1;
+}
+@media screen and (max-width: 55em) {
+  /*.tabs nav ul li a > span {
+    display: none;
+  }*/
+
+  .content-current {
+    width: auto;
+  }
+  .mediabox {
+    display: block;
+    float: none;
+    clear: both;
+    width: auto;
+  }
+  .mediabox img {
+    float: left;
+    width: 40%;
+    clear: left;
+  }
+  .mediabox p, .mediabox h3 {
+    margin-top: 0px;
+    width: 55%;
+    text-align: left;
+    clear: right;
+    float: right;
+  }
+  .mediabox:after {
+    clear: both;
+  }
+  span {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .tabs nav ul li {
+    margin: 0;
+    width: 20%;
+  }
+  .mediabox {
+    display: block;
+    text-align: center;
+  }
+  .mediabox h3, .mediabox p {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .mediabox img {
+    width: 100%;
+    margin-bottom: 3em;
+    align: center;
+    float: none;
+  }
 }
