@@ -17,7 +17,35 @@ inactive tabs:
 tabs are centered
 only show 3 content sections at a time
 show them in a 3 up*/
-
+@media (max-width: 840px){
+  /*.content-current {
+    content: "";
+    display: none;
+    clear: both;
+  }*/
+  .mediabox {
+    display: block;
+    float: none;
+    clear: both;
+  }
+  .mediabox img {
+    float: left;
+    width: 40%;
+    clear:left;
+  }
+  .mediabox p {
+    margin-left: 40%;
+    text-align: left;
+    clear: right;
+    float: right;
+  }
+  .mediabox:after {
+  		clear: both;
+  	}
+  span {
+    display:none;
+  }
+}
 body {
   font-family: Arial, sans-serif;
   color: cornflowerblue;
@@ -65,7 +93,12 @@ nav ul li {
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
+  /*position: relative;*/
+  line-height: 2em;
+  text-align: center;
   position: relative;
+  top: 2px;
+  box-sizing: border-box;
 }
 .info {
   text-align: center;
@@ -74,7 +107,7 @@ span:hover {
   color: darkgrey;
 }
 span {
-  height: 100%;
+  text-align: center;
   color: lightgrey;
 }
 nav ul {
@@ -88,11 +121,12 @@ a {
 	/*display: block;*/
   padding-right: 1.15em;
   padding-left: 1.15em;
-  padding-top: .7em;
-  padding-bottom: .6em;
+  padding-top: .5em;
+  padding-bottom: .4em;
   text-decoration: none;
-  line-height: 2.5;
+  line-height: 1.5;
   white-space: nowrap;
+  text-align: center;
 
 }
 img {
@@ -103,7 +137,8 @@ img {
   border-left: 1px solid cornflowerblue;
   border-right: 1px solid cornflowerblue;
   border-bottom: 1px solid white;
-  padding-top: -.3em;
+  position: relative;
+  top: 1px;
   box-sizing: border-box;
   padding-bottom: ;
 }
