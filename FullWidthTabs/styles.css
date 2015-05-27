@@ -82,6 +82,7 @@ nav {
   border-color: cornflowerblue;
   border-bottom-color: white;
   border-top-width: 3px;
+  color: cornflowerblue;
   /*border-bottom: transparent;*/
 }
 .info {
@@ -171,9 +172,14 @@ a.tabs5 {
     clear: both;
   }
   span {
-    display: none;
+    visibility: hidden;
   }
-
+  span:before {
+    visibility: visible;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 500px) {
   .tabs nav ul li {
@@ -194,5 +200,11 @@ a.tabs5 {
     margin-bottom: 3em;
     align: center;
     float: none;
+  }
+  span {
+    visibility: hidden;
+  }
+  span:before {
+    visibility: visible;
   }
 }
