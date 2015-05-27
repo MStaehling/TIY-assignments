@@ -119,20 +119,8 @@ img {
 a:hover {
   color: darkgrey;
 }
-a.tabs1 {
-  content: ;
-}
-a.tabs2 {
-  content: ;
-}
-a.tabs3 {
-  content: ;
-}
-a.tabs4 {
-  content: ;
-}
-a.tabs5 {
-  content: ;
+span.tab-current {
+  color: cornflowerblue;
 }
 .mediabox {
   box-sizing: border-box;
@@ -172,12 +160,10 @@ a.tabs5 {
     clear: both;
   }
   span {
-    visibility: hidden;
+    display: none;
   }
   span:before {
-    visibility: visible;
     display: inline-block;
-    position: relative;
     text-align: center;
   }
 }
@@ -202,9 +188,10 @@ a.tabs5 {
     float: none;
   }
   span {
-    visibility: hidden;
+    display: none;
   }
   span:before {
-    visibility: visible;
+    display: inline-block;
+    text-align: center;
   }
 }
