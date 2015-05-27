@@ -70,6 +70,12 @@ nav {
   position: relative;
   /*box-sizing: border-box;*/
 }
+#tabs nav ul li a {
+  color: lightgrey;
+}
+#tabs nav ul li a:hover {
+  color: darkgrey;
+}
 #tabs nav ul li.tab-current {
   border-top: 3px solid cornflowerblue;
   border-left: 1px solid cornflowerblue;
@@ -85,11 +91,11 @@ nav {
   color: cornflowerblue;
   /*border-bottom: transparent;*/
 }
+#tabs nav ul li.tab-current a {
+  color: cornflowerblue;
+}
 .info {
   text-align: center;
-}
-span:hover {
-  color: darkgrey;
 }
 span {
   text-align: center;
@@ -116,11 +122,8 @@ span {
 img {
   width: 100%;
 }
-a:hover {
+a:hover > span{
   color: darkgrey;
-}
-span.tab-current {
-  color: cornflowerblue;
 }
 .mediabox {
   box-sizing: border-box;

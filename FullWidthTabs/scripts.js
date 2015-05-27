@@ -34,11 +34,15 @@
 
 
 $(function() {
-  $('li').click(function() {
-    $('a').parent().removeClass('tab-current');
+  $('#tabs li').click(function() {
+    //$('a').parent().removeClass('tab-current');
+    $(this).siblings().removeClass('tab-current')
     $(this).addClass('tab-current');
-    $('section').removeClass('content-current');
-    $($(this).children('a').attr('href')).addClass('content-current');
+  //  $('section').removeClass('content-current');
+    var panelId = $(this).children('a').attr('href');
+    var $panel = $(panelId);
+    $panel.addClass('content-current')
+    .siblings().removeClass('content-current');
   });
 });
 
