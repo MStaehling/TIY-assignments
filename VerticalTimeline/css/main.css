@@ -94,8 +94,92 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*Where our CSS goes*/
 
+body {
+  font-size:
+}
 
+.timeline article {
+  color: white;
+  background-color: #7ABFEB;
+  padding: 2ex 2em;
+  width: 62%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: auto;
+}
+.timeline li:nth-child(even) article {
+  background-color: #5B92CA;
+}
+.timeline li small {
+  color: #C1CFDA;
+}
+.timeline li big {
+  color: #7ABFEB;
+  font-size: 300%;
+}
+.timeline li:nth-child(even) time big {
+  color: #5B92CA;
+}
+.timeline article h3 {
+  border-bottom: 1px solid white;
+}
+.timeline li article {
+border-radius: 1em;
+}
+.timeline li {
+  padding-bottom: 2ex;
+  position: relative;
+}
+.timeline {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.timeline time {
+  float: left;
+  width: 14%;
+  margin-right: 24%;
+  display: inline-block;
+  text-align: right;
+}
+.timeline time > * {
+  display: block;
+}
+.timeline time::after{
+  content: ' ';
+  position: absolute;
+  left: 25%;
+  width: 1ex;
+  background-color: #7ABFEB;
+  top: 0;
+  bottom: 0;
+}
+.timeline li::before {
+  content: '\2708';
+  position: absolute;
+  left: 24%;
+  font-size: 150%;
+  border-radius: 1ex;
+  border: .5ex solid #7ABFEB;
+  /*width: 1ex;*/
+  background-color: #5B92CA;
+  background-blend-mode: color;
+
+}
+.timeline li::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.container {
+  margin: 2em 1em;
+  padding: 0 2em;
+}
+big {
+  color:
+}
 
 
 
