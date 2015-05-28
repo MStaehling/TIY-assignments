@@ -137,9 +137,8 @@ body {
   display: block;
   width: 0;
   z-index: 1;
-  left: 0px;
-  top: 10px;
-  left: 37%;
+  right: 100%;
+  top: 1em;
 }
 .timeline li {
   padding-bottom: 2ex;
