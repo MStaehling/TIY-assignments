@@ -129,6 +129,7 @@ body {
 border-radius: 1em;
 /*margin-left: 30%;*/
 }
+/*Used code for making speech bubble to get the carot from http://www.ilikepixels.co.uk/drop/bubbler/*/
 .timeline li article::after {
   content: '';
 position: absolute;
