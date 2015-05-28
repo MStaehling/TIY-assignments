@@ -111,11 +111,12 @@ body {
 }
 .timeline li article {
   border-radius: 1em;
+  position: relative;
   /*margin-left: 30%;*/
 }
 /*Used code for making speech bubble to get the carot from http://www.ilikepixels.co.uk/drop/bubbler/*/
 
-.timeline li article::after {
+.timeline li article::before {
   content: '';
   position: absolute;
   border-style: solid;
@@ -124,8 +125,8 @@ body {
   display: block;
   width: 0;
   z-index: 1;
-  left: 37%;
-  top: 10px;
+  right: 100%;
+  top: 1em;
 }
 .timeline li:nth-child(even) article::after {
   content: '';
@@ -166,20 +167,21 @@ body {
   left: 25%;
   width: 1ex;
   background-color: #7ABFEB;
-  top: 0;
+  top: 3px;
   bottom: 0;
+  margin-left: 2.25ex;
 }
 .timeline li::before {
   content: '\2708';
   position: absolute;
-  left: 24%;
+  left: 25%;
   font-size: 150%;
-  border-radius: 1ex;
+  border-radius: 50%;
   border: .5ex solid #7ABFEB;
-  /*width: 1ex;*/
-
+  width: 2.5ex;
+  line-height: 2.5ex;
+  text-align: center;
   background-color: #5B92CA;
-  background-blend-mode: color;
   z-index: 1;
 }
 .timeline li::after {
