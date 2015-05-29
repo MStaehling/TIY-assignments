@@ -1,40 +1,95 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<body>
+    <div class="container">
+        <form>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+            <div class="column1">
+                <label>FIRST NAME</label>
+                <input placeholder="Jonathan">
+                <label>LAST NAME</label>
+                <input placeholder="Doe">
+                <label>EMAIL ADDRESS</label>
+                <input placeholder="jon@doe.com">
+                <label>COUNTRY</label>
+                <select>
+                    <option>Choose a country</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                    <option>Portugal</option>
+                </select>
+                <label>BIOGRAPHY</label>
+                <textarea></textarea>
+            </div>
+            <div class="column2">
+                <label>PHONE NUMBER</label>
+                <input placeholder="+351 999 999">
+                <label>AFFILIATIONS</label>
+                <textarea></textarea>
+                <label>OCCUPATION</label>
+                <select>
+                    <option>Choose an occupation</option>
+                    <option>Web designer</option>
+                    <option>Web developer</option>
+                    <option>Hybrid</option>
+                </select>
+                <label>CAT'S NAME</label>
+                <input placeholder="Kitty">
+                <label>FAVORITE GADGET</label>
+                <input placeholder="Annoy-a-tron">
+            </div>
+            <div class="column3">
+                <label>TYPE OF TALENT</label>
+                <select>
+                    <option>Choose a talent</option>
+                    <option>Ninja silence</option>
+                    <option>Sumo power</option>
+                    <option>Samurai precision</option>
+                </select>
+                <label>FAVORITE DRINK</label>
+                <input placeholder="Green Tea">
+                <label>SPECIAL POWER</label>
+                <input placeholder="Anti-gravity">
+                <label>WEAPON OF CHOICE</label>
+                <input placeholder="Lightsaber">
+                <label>COMMENTS</label>
+                <textarea></textarea>
+            </div>
+            <div class="submit">
+                <button>SEND YOUR DATA</button>
+
+            </div>
+
+
+
+        </form>
+
+    </div><!-- container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
 </html>

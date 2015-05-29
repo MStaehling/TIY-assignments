@@ -95,9 +95,74 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
+body, label, input, textarea, select {
+  background-color: #69A1D9;
+}
+button {
+  clear: both;
+  width: 13em;
+  font-size: 1em;
+  background-color: #3D6897;
+  position: absolute;
+  color: white;
+  line-height: 2;
+  display: inline-block;
+  padding: .5em;
+  text-align: center;
+}
+.container {
+padding: 2em;
+position: relative;
+}
+.submit {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding-top: 3.5em;
+  right: 15%;
+}
+ input, textarea, select, .submit {
+  width: 100%;
+}
+input, textarea {
+  border: 3px solid white;
+}
+input {
+  line-height: 2;
+}
+textarea {
+  line-height: 5;
+}
+label, select {
+  color: white;
+}
+label {
+  margin-top: 3em;
+  display: inline-block;
+}
+select {
+  border: 1px solid grey;
+}
+input  {
+  color: #3D6897;
+}
+@media screen and (min-width: 800px) {
+  .column1, .column2 {
+    box-sizing: border-box;
+    width: 50%;
+    padding: .7em 2.4em;
+    float: left;
+  }
+}
+@media screen and (min-width: 1120px){
+  .column1, .column2, .column3 {
+    box-sizing: border-box;
+    width: 33%;
+    padding: .7em 2.4em;
+    float: left;
+  }
+}
+/*answer font color #3D6897*/
 
 
 
