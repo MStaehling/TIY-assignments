@@ -108,7 +108,7 @@ button {
   line-height: 2;
   display: inline-block;
   padding: .5em;
-  text-align: center;
+  /*text-align: center;*/
 }
 .container {
 padding: 2em;
@@ -119,7 +119,8 @@ position: relative;
   position: relative;
   text-align: center;
   padding-top: 3.5em;
-  right: 15%;
+  right: 10%;
+  margin: 0 auto;
 }
  input, textarea, select, .submit {
   width: 100%;
