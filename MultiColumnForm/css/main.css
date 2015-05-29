@@ -147,6 +147,10 @@ select {
 input  {
   color: #3D6897;
 }
+/*Got styling placeholder from http://blog.teamtreehouse.com/the-css3-placeholder-pseudo-element*/
+input::-webkit-input-placeholder{
+  color: #3D6897;
+}
 @media screen and (min-width: 800px) {
   .column1, .column2 {
     box-sizing: border-box;
