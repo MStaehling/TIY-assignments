@@ -152,10 +152,16 @@ input::-webkit-input-placeholder{
   color: #3D6897;
 }
 @media screen and (min-width: 800px) {
-  .column1, .column2 {
+  .column1{
     box-sizing: border-box;
     width: 50%;
-    padding: .7em 2.4em;
+    padding: .7em 2.4em .7em 0;
+    float: left;
+  }
+  .column2 {
+    box-sizing: border-box;
+    width: 50%;
+    padding: .7em 0 .7em 2.4em;
     float: left;
   }
 }
