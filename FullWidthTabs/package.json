@@ -1,0 +1,12 @@
+{
+  "name": "FullWidthTabs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browser-sync start --server --files='js/**/*.js,test/spec/**/*.js' --startPath test/index.html",
+    "start": "browser-sync start --server"
+  },
+  "author": "",
+  "license": "CC0"
+}
