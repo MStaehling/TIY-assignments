@@ -95,6 +95,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  .pig {
+   	/*content: '\1f437␠';*/
+   	width: 30%;
+   }
+   .content {
+     text-align: center;
+     margin: 0 2ex;
+   	width: 100%;
+   }
+   /*this will be changed to an active class later when there's more to work with*/
+   .section1, .section2, .section3, .section4, .section5 {
+   	width: 27%;
+   	display: inline-block;
+   	float: left;
+     margin: 2ex;
+   }
+   .section1 h3::before{
+     content: '\231b';
+     color: orange;
+   }
+   p {
+   }
 
 
 
