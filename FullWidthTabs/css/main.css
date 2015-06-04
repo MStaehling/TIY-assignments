@@ -94,16 +94,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-ul {
+.tabs {
   width: 100%;
   display: inline-block;
   text-align: center;
+}
+
+ul {
+
   list-style: none;
   border-bottom: 1px solid orange;
   text-align: center;
   position: relative;
 }
-li {
+nav {
   text-align: center;
   position: relative;
 }
@@ -111,7 +115,8 @@ a {
   text-decoration: none;
   width: 8em;
   border: 1px solid lightgrey;
-  float: left;
+  display: inline-block;
+  /*float: left;*/
   margin: 0 1ex;
   box-sizing: border-box;
   line-height: 2.5;
