@@ -94,11 +94,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
+ul {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  border-bottom: 1px solid orange;
+  text-align: center;
+  position: relative;
+}
+li {
+  text-align: center;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  width: 8em;
+  border: 1px solid lightgrey;
+  float: left;
+  margin: 0 1ex;
+  box-sizing: border-box;
+  line-height: 2.5;
+  position: relative;
+}
+span {
+  color: lightgrey;
+}
+span::hover {
+  color: darkgrey;
+}
+a::hover {
+  color: darkgrey;
+}
+.active {
+  border-top: 3px solid orange;
+  border-left: 1px solid orange;
+  border-right: 1px solid orange;
+  border-bottom: 1px solid red;
+}
+.active span {
+  color: orange;
+}
 
 
 
