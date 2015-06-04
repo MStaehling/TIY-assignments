@@ -95,48 +95,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .tabs {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  border-bottom: 1px solid orange;
-  text-align: center;
-  position: relative;
+width: 100%;
 }
 nav {
+  border-bottom: 1px solid orange;
+  white-space: inherit;
   text-align: center;
-  position: relative;
+  height: 4em;
+  position: absolute;
+  margin-top: 4em;
+  padding-bottom: 1px;
+  width: 100%;
 }
-a {
-  text-decoration: none;
-  width: 8em;
-  border: 1px solid lightgrey;
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.tabs nav ul li {
+  color: lightgrey;
   display: inline-block;
-  /*float: left;*/
-  margin: 0 1ex;
-  box-sizing: border-box;
-  line-height: 2.5;
-  position: relative;
 }
-span {
+.tabs nav ul li a {
+  text-decoration: none;
+  padding: 1em;
+  /*outline: 1px solid red;*/
+  width: 15%m;
+  border: 1px solid lightgrey;
+  border-bottom: transparent;
+  display: inline-block;
+  float: left;
+  margin: 0 1ex;
+  /*box-sizing: border-box;*/
+  line-height: 1.9;
+}
+
+.tabs nav ul li a span {
   color: lightgrey;
 }
-span::hover {
+/*.tabs nav ul li a span::hover {
+  color: darkgrey;
+}*/
+.tabs nav a:hover {
   color: darkgrey;
 }
-a::hover {
-  color: darkgrey;
+#shop::before {
+content: '\1f3ea';
 }
-.active {
+#drinks::before {
+content: '\1f377';
+}
+#lab::before {
+content: '\32a9';
+color: red;
+}
+#food::before {
+content: '\1f34e';
+}
+#order::before {
+  content: '\231b';
+}
+a::before {
+  color: lightgrey;
+}
+.tabs nav ul li a.active {
   border-top: 3px solid orange;
   border-left: 1px solid orange;
   border-right: 1px solid orange;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid white;
 }
-.active span {
+.tabs nav ul li a.active span {
   color: orange;
 }
 
