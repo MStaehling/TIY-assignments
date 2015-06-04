@@ -95,31 +95,60 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  .pig {
-   	/*content: '\1f437␠';*/
-   	width: 30%;
-   }
+
    .content {
      text-align: center;
      margin: 0 2ex;
    	width: 100%;
    }
+   .section {
+     display: none;
+     text-align: center;
+   }
+   .content-current {
+     display: block;
+   }
    /*this will be changed to an active class later when there's more to work with*/
    .section1, .section2, .section3, .section4, .section5 {
    	width: 27%;
    	display: inline-block;
-   	float: left;
      margin: 2ex;
+     vertical-align: top;
    }
-   .section1 h3::before{
-     content: '\231b';
-     color: orange;
+
+   img {
+     width: 100%;
+     position: relative;
+     display: block;
    }
-   p {
+   p, h3 {
+     display: block;
    }
 
 
 
+@media screen and (max-width: 55em) {
+  .section1, .section2, .section3, .section4, .section5 {
+    display: block;
+    width: 100%;
+  }
+  img {
+    width: 40%;
+    display: block;
+    float:left;
+    height: 100%;
+    position: relative;
+    margin-bottom: 4em;
+  }
+  img, p, h3 {
+  }
+  h3, p {
+    width: 60%;
+    display: block;
+    float: right;
+    /*float: right;*/
+  }
+}
 
 
 
