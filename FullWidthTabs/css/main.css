@@ -96,15 +96,15 @@ textarea {
    ========================================================================== */
 .tabs {
 width: 100%;
+position: absolute;
 }
 nav {
   border-bottom: 1px solid orange;
   white-space: inherit;
   text-align: center;
-  height: 4em;
-  position: absolute;
+  position: relative;
   margin-top: 4em;
-  padding-bottom: 1px;
+  padding-bottom: -24ex;
   width: 100%;
 }
 nav ul {
@@ -117,12 +117,13 @@ nav ul {
 .tabs nav ul li {
   color: lightgrey;
   display: inline-block;
+  bottom: 0;
 }
 .tabs nav ul li a {
   text-decoration: none;
   padding: 1em;
   /*outline: 1px solid red;*/
-  width: 15%m;
+  /*width: m;*/
   border: 1px solid lightgrey;
   border-bottom: transparent;
   display: inline-block;
@@ -130,6 +131,7 @@ nav ul {
   margin: 0 1ex;
   /*box-sizing: border-box;*/
   line-height: 1.9;
+  bottom: 0;
 }
 
 .tabs nav ul li a span {
@@ -172,8 +174,19 @@ a::before {
 
 
 
+@media screen and (max-width: 55em){
+  li a span {
+    display: none;
+  }
+}
 
-
+@media screen and (max-width:30em) {
+  a {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
 
 
 
