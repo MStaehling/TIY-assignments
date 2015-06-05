@@ -94,9 +94,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.container {
+  display: inline-block;
+  position: absolute;
+}
 .tabs {
 width: 100%;
-position: absolute;
+position: relative;
 }
 nav {
   border-bottom: 1px solid orange;
@@ -171,7 +175,7 @@ a::before {
 }
 .tabs nav ul li a.active span {
   color: orange;
-
+}
    .content {
      text-align: center;
      margin: 0 2ex;
